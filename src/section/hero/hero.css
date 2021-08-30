@@ -13,9 +13,8 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  max-width: 55rem;
-  left: 55%;
-  transform: translateX(-50%);
+  left: 65%;
+  transform: translateX(-60%);
 }
 
 .playBtnContainer {
@@ -57,9 +56,24 @@
   color: #c7c7c7;
 }
 
+.logoContainer {
+  width: 100%;
+  padding: 1rem;
+  position: absolute;
+  top: 5rem;
+  max-width: 35rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  width: 100%;
+}
+
 @media only screen and (min-width: 600px) {
   .fatherDickImg {
     bottom: -10%;
+    max-width: 35rem;
   }
 
   .playBtn {
@@ -72,5 +86,23 @@
   .playBtn:hover {
     transform: scale(1.25);
     stroke-width: 0.075rem;
+  }
+
+  .logoContainer {
+    top: 3rem;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .logoContainer {
+    left: 5rem;
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .fatherDickImg {
+    bottom: -10%;
+    max-width: 50rem;
   }
 }
