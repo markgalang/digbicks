@@ -1,13 +1,9 @@
-import logo from "./logo.svg";
-import "./App.css";
+import Hero from "./section/hero/hero";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>DigBicks</p>
-      </header>
+    <div>
+      <Hero />
     </div>
   );
 }
