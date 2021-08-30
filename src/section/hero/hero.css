@@ -1,0 +1,108 @@
+.heroContainer {
+  height: 100vh;
+  position: relative;
+  background-image: url("../../assets/images/tropical.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right 15% top 30%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.fatherDickImg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 65%;
+  transform: translateX(-60%);
+}
+
+.playBtnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 60%,
+    rgba(193, 250, 255, 1) 100%
+  );
+}
+
+.playBtn {
+  color: #fff;
+  width: 5rem;
+  height: 5rem;
+  stroke-width: 0.05rem;
+  cursor: pointer;
+}
+
+.closeBtn {
+  color: #e0e0e0;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 999999999;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+}
+
+.closeBtn:hover {
+  color: #c7c7c7;
+}
+
+.logoContainer {
+  width: 100%;
+  padding: 1rem;
+  position: absolute;
+  top: 5rem;
+  max-width: 35rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .fatherDickImg {
+    bottom: -10%;
+    max-width: 35rem;
+  }
+
+  .playBtn {
+    width: 6rem;
+    height: 6rem;
+    transform: scale(1);
+    transition: all 0.2s;
+  }
+
+  .playBtn:hover {
+    transform: scale(1.25);
+    stroke-width: 0.075rem;
+  }
+
+  .logoContainer {
+    top: 3rem;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .logoContainer {
+    left: 5rem;
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .fatherDickImg {
+    bottom: -10%;
+    max-width: 50rem;
+  }
+}
