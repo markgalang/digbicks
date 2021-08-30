@@ -1,0 +1,11 @@
+body .modal-video:focus-visible {
+  outline: none;
+}
+
+body .modal-video-body {
+  max-width: 100rem;
+}
+
+body .modal-video-close-btn {
+  display: none;
+}

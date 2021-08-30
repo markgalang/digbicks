@@ -13,7 +13,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  max-width: 45rem;
+  max-width: 55rem;
   left: 55%;
   transform: translateX(-50%);
 }
@@ -40,6 +40,21 @@
   height: 5rem;
   stroke-width: 0.05rem;
   cursor: pointer;
+}
+
+.closeBtn {
+  color: #e0e0e0;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 999999999;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+}
+
+.closeBtn:hover {
+  color: #c7c7c7;
 }
 
 @media only screen and (min-width: 600px) {
