@@ -1,0 +1,26 @@
+.thumbnailFrame {
+  width: 350px;
+  height: 350px;
+  background-image: url("assets/images/thumbnailFrame.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .thumbnailFrame {
+    width: 300px;
+    height: 300px;
+  }
+
+  .thumbnailFrame div {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  .thumbnailFrame img {
+    height: 200px !important;
+  }
+}
