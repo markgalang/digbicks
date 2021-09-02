@@ -1,0 +1,26 @@
+.heroVideoContainer {
+  position: relative;
+}
+
+.videoContainer {
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.volumeIcon {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  color: #6e6e6e;
+  height: 2rem;
+  width: 2rem;
+  transform: scale(1);
+  transition: all 0.2s;
+}
+
+@media only screen and (min-width: 800px) {
+  .volumeIcon:hover {
+    transform: scale(1.2);
+  }
+}

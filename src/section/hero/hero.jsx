@@ -2,8 +2,7 @@ import React from "react";
 import "./hero.css";
 import FatherOfAllBicks from "assets/images/fatherOfBicks.png";
 import DigBicks from "assets/images/logo.png";
-import { PlayCircle } from "react-feather";
-import { X } from "react-feather";
+import { PlayCircle, X } from "react-feather";
 
 function Hero({ isOpen, setIsOpen }) {
   return (
