@@ -13,9 +13,10 @@ function HeroVideo() {
         <source src={FamilyGuy} type="video/mp4" />
       </video>
 
-      {/* <div className="logoContainer">
+      <div className="logoContainer">
         <img className="logo" src={DigBicks} alt="DigBicks" />
-      </div> */}
+      </div>
+
       {isMuted ? (
         <VolumeX className="volumeIcon" onClick={() => setIsMuted(false)} />
       ) : (

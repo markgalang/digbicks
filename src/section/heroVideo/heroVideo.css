@@ -8,6 +8,18 @@
   width: 100%;
 }
 
+.logoContainer {
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  max-width: 20rem;
+  width: 100%;
+}
+
 .volumeIcon {
   position: absolute;
   bottom: 2rem;
@@ -17,6 +29,14 @@
   width: 2rem;
   transform: scale(1);
   transition: all 0.2s;
+}
+
+@media only screen and (min-width: 600px) {
+  .logoContainer {
+    top: 1.5rem;
+    left: 1.5rem;
+    transform: translateX(0);
+  }
 }
 
 @media only screen and (min-width: 800px) {

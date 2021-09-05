@@ -17,13 +17,13 @@ export default function Collection(props) {
                 Collection
               </div>
               <div className="headerMob">The Collection</div>
-              <div className="description">
+              {/* <div className="description">
                 "In spite of the fact that the unification of the feedback
                 system becomes a serious problem. It goes without saying that
                 the explicit examination of major decisions, that lie behind the
                 software engineering concepts and practices should help in
                 resolving present challenges. One way or another
-              </div>
+              </div> */}
             </div>
             <div className="collectionButton">
               <Button>Show More</Button>

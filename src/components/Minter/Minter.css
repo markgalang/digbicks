@@ -1,0 +1,132 @@
+.minterContainer {
+  border-radius: 1rem;
+  padding: 1rem;
+  max-width: 600px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+}
+
+.mintTitle {
+  color: #da3138;
+  font-family: "Alfa Slab One";
+  text-shadow: 0px 2px 0px rgba(100, 100, 100, 0.498039);
+  line-height: 82px;
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+.mintDescription {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 1rem 0;
+  line-height: 1.3;
+}
+
+.minterInputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.mintBtn {
+  color: #fff;
+  background: #da3138;
+  border: 3px solid #bf0910;
+  border-radius: 1rem;
+  padding: 0.75rem 0;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.minterInputContainer {
+  display: flex;
+}
+
+.minterInputFieldContainer {
+  background: #ffffff;
+  border: 2px solid #c1c1c1;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  display: flex;
+  overflow: hidden;
+}
+
+.minterInputText {
+  border-right: 2px solid #c1c1c1;
+  padding: 1rem;
+  flex: 1;
+}
+
+.minterCounter {
+  width: 5rem;
+  border: none !important;
+  height: 100%;
+  padding: 0;
+  padding-left: 0.75rem !important;
+  outline: none !important;
+}
+
+.pricePreview {
+  padding: 0.5rem;
+}
+
+#root
+  > div
+  > div.mintContainer
+  > div.container.contentContainer
+  > div
+  > div
+  > div
+  > span
+  > b:nth-child(2),
+#root
+  > div
+  > div.mintContainer
+  > div.container.contentContainer
+  > div
+  > div
+  > div
+  > span
+  > b:nth-child(3) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+@media only screen and (min-width: 550px) {
+  .minterInputContainer {
+    flex-direction: row;
+  }
+
+  .minterInputFieldContainer {
+    flex: 1;
+  }
+
+  .mintBtn {
+    margin: 0;
+    margin-left: 1rem;
+    min-width: 7rem;
+  }
+
+  .mintTitle {
+    text-align: left;
+  }
+
+  .mintDescription {
+    text-align: left;
+    margin: 2rem 0;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .minterContainer {
+    padding: 3rem 3rem;
+  }
+}
