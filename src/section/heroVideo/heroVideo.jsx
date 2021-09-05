@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import FamilyGuy from "assets/videos/family-guy.mp4";
 import "./heroVideo.css";
-import FatherOfAllBicks from "assets/images/fatherOfBicks.png";
 import DigBicks from "assets/images/logo.png";
 import { Volume2, VolumeX } from "react-feather";
 

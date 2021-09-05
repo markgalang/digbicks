@@ -44,7 +44,13 @@
   align-items: center;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 800px) {
+  .contentContainer {
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
   .mintedContainer {
     margin: 0 2rem;
   }
