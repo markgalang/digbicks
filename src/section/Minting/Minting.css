@@ -1,0 +1,57 @@
+.mintContainer {
+  min-height: 100vh;
+  background-image: url("../../assets//images/mint-bg.svg");
+  background-size: cover;
+  background-position: center 35%;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mintOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 60%,
+    rgba(193, 250, 255, 1) 100%
+  );
+}
+
+.contentContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.mintedContainer {
+  margin: 2rem 0;
+}
+
+.mintedPreview {
+  max-width: 350px;
+  width: 100%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 800px) {
+  .contentContainer {
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .mintedContainer {
+    margin: 0 2rem;
+  }
+}
