@@ -1,0 +1,25 @@
+.roadmapContainer {
+  background-color: #c2faff !important;
+  padding: 2rem 0;
+}
+
+.roadmapImage {
+  width: 100%;
+  max-width: 1200px;
+  display: none;
+}
+
+.roadmapImageMobile {
+  width: 100%;
+  display: block;
+}
+
+@media only screen and (min-width: 800px) {
+  .roadmapImage {
+    display: block;
+  }
+
+  .roadmapImageMobile {
+    display: none;
+  }
+}

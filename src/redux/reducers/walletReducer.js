@@ -6,7 +6,7 @@ import {
 
 const defaultState = {
   isWalletConnected: false,
-  ethPrice: 0.0400000010002030003, //set default price here
+  ethPrice: 0.03000000112345678903, //set default price here
   isLoading: false,
 };
 
