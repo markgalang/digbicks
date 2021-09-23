@@ -2,8 +2,6 @@ import React from "react";
 import "./Collection.css";
 import CollectionImagesContainer from "components/CollectionImages/CollectionImages";
 
-import { Button } from "antd";
-
 export default function Collection(props) {
   return (
     <>
@@ -25,15 +23,26 @@ export default function Collection(props) {
                 resolving present challenges. One way or another
               </div> */}
             </div>
-            <div className="collectionButton">
-              <Button>Show More</Button>
-            </div>
+            <a
+              href="https://opensea.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="collectionButton"
+            >
+              Show More
+            </a>
           </div>
 
           <CollectionImagesContainer />
-          <div className="collectionButtonMob">
-            <Button>Show More</Button>
-          </div>
+
+          <a
+            href="https://opensea.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="collectionButtonMob"
+          >
+            Show More
+          </a>
         </div>
       </section>
     </>

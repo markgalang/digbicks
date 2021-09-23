@@ -46,8 +46,8 @@
   margin-top: 30px;
 }
 
-.collectionButton button,
-.collectionButtonMob button {
+.collectionButton,
+.collectionButtonMob {
   background-color: #da3138;
   border: 3px solid #bf0910;
   color: #fff;
@@ -55,12 +55,19 @@
   font-size: 1.5rem;
   font-family: "Alfa Slab One", cursive;
   border-radius: 15px;
+  transition: all 0.3s;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.collectionButton button:hover,
-.collectionButtonMob button:hover {
+.collectionButton {
+  align-self: flex-start;
+}
+
+.collectionButton:hover,
+.collectionButtonMob:hover {
   -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .headerMob {

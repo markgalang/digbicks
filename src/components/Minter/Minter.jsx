@@ -22,11 +22,11 @@ export default function Minter() {
     <div className="minterContainer ">
       <h1 className="mintTitle">Bick Land</h1>
       <p className="mintDescription">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit
-        nunc in vulputate sodales. Vestibulum in eros ac neque vestibulum auctor
-        vitae vel nisi. Aenean ac turpis felis. Curabitur purus ipsum, placerat
-        ac turpis non, cursus pulvinar nisi. Aliquam et dolor malesuada,
-        sagittis diam a, imperdiet dui.
+        <strong>DIGBICKS</strong> is a collection of <strong>6969</strong>{" "}
+        unique NFTs in the Ethereum blockchain. Each DigBick has its distinct
+        personality defined by carefully curated attributes such as headgears,
+        mouth accessories, weapons, and more. They are all fun and quirky, but
+        you’d be more surprised by the rare ones!
       </p>
 
       <div className="minterInputContainer">
@@ -49,7 +49,7 @@ export default function Minter() {
 
       <p className="pricePreview">{`Final Price: ${(
         wallet.ethPrice * minter.mintCount
-      ).toFixed(4)} ETH`}</p>
+      ).toFixed(5)} ETH`}</p>
     </div>
   );
 }

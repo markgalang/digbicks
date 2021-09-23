@@ -28,11 +28,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
 }
 
 .mintedContainer {
   margin: 2rem 0;
+  position: relative;
 }
 
 .mintedPreview {
@@ -42,6 +43,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.mintedContainer::after {
+  content: "";
+  background-image: url("assets/images/bickFrame.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 104%;
+  height: 105%;
+  display: block;
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  bottom: -0.5rem;
 }
 
 @media only screen and (min-width: 800px) {
