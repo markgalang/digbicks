@@ -17,8 +17,9 @@
 }
 
 .logo {
-  max-width: 20rem;
+  max-width: 13rem;
   width: 100%;
+  border: 2px solid red;
 }
 
 .volumeIcon {
