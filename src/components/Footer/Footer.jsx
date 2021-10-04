@@ -1,12 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import DigBicks from "assets/images/logo.png";
-import {
-  FaInstagram,
-  FaTelegramPlane,
-  FaDiscord,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaDiscord, FaTwitter } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -19,15 +14,7 @@ function Footer() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.instagram.com/"
-          className="social-link"
-        >
-          <FaInstagram className="social-icon" />
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://twitter.com/"
+          href="https://twitter.com/DigBickNFT"
           className="social-link"
         >
           <FaTwitter className="social-icon" />
@@ -35,15 +22,7 @@ function Footer() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://telegram.org/"
-          className="social-link"
-        >
-          <FaTelegramPlane className="social-icon" />
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://discord.com/"
+          href="https://discord.gg/8qXuhTzn"
           className="social-link"
         >
           <FaDiscord className="social-icon" />
