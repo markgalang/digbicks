@@ -3,9 +3,13 @@ body .accordionTitleContainer {
   background: #da3138;
   border: 3px solid #bf0910;
   border-radius: 1rem !important;
-  margin: 0.75rem 0;
+  margin: 1.25rem 0;
 }
 
 body .accordionTitleContainer svg {
   color: #fff;
+}
+
+#panel1bh-content > div > p {
+  font-weight: 200;
 }

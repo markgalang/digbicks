@@ -1,7 +1,7 @@
 export default (state = [], action) => {
   const initialData = [
     {
-      title: "How can build my DigBicks Army?",
+      title: <strong>How can build my DigBicks Army?</strong>,
       content: (
         <div>
           <p>There are ways to build your digbicks army suchs as</p>
@@ -21,7 +21,7 @@ export default (state = [], action) => {
       ),
     },
     {
-      title: "What are DigBicks?",
+      title: <strong>What are DigBicks?</strong>,
       content: (
         <div>
           <p>
@@ -39,16 +39,16 @@ export default (state = [], action) => {
       ),
     },
     {
-      title: "How much does it cost to build a DigBicks army?",
+      title: <strong>How much does it cost to build a DigBicks army?</strong>,
       content: "The minting fee for each DigBicks is 0.069 ETH.",
     },
     {
-      title: "What can I do with my DigBick NFT?",
+      title: <strong>What can I do with my DigBick NFT?</strong>,
       content:
         "Once you have a DigBicks,you will have this greater power and it's yours to use in any purposes. Please read our Terms & Conditions for more information.",
     },
     {
-      title: "What is NFT?",
+      title: <strong>What is NFT?</strong>,
       content:
         "A non-fungible token (NFT) is a unit of data stored on a digital ledger, called a blockchain, that certifies a digital asset to be unique and therefore not interchangeable.",
     },

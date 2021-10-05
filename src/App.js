@@ -12,7 +12,7 @@ function App() {
       <Minting />
       {/* <Hero isOpen={isOpen} setIsOpen={setIsOpen} />
       <VideoPlayback isOpen={isOpen} setIsOpen={setIsOpen} /> */}
-      <Collection />
+      {/* <Collection /> */}
       <Roadmap />
       <FAQ />
       <Footer />

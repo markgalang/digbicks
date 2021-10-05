@@ -1,4 +1,5 @@
 .roadmapContainer {
+  background-image: url(assets/images/collectionBg.jpg);
   background-color: #c2faff !important;
   padding: 2rem 0;
 }

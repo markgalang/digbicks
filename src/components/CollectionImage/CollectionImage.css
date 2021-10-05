@@ -5,8 +5,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
-  margin: 1rem;
+  padding: 0;
+  margin: 1.5rem 1rem;
 }
 
 .collectionImage {
@@ -54,5 +54,11 @@
 
   .thumbnailFrame img {
     height: 200px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .thumbnailFrame {
+    padding: 3rem;
   }
 }

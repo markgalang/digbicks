@@ -23,21 +23,21 @@ export default function Collectionimages(props) {
       link: "https://opensea.io/",
       imageDescription: "BickFather",
     },
-    {
-      image: BobMarley,
-      link: "https://opensea.io/",
-      imageDescription: "BickFather",
-    },
+    // {
+    //   image: BobMarley,
+    //   link: "https://opensea.io/",
+    //   imageDescription: "BickFather",
+    // },
     {
       image: Trump,
       link: "https://opensea.io/",
       imageDescription: "BickFather",
     },
-    {
-      image: Pope,
-      link: "https://opensea.io/",
-      imageDescription: "BickFather",
-    },
+    // {
+    //   image: Pope,
+    //   link: "https://opensea.io/",
+    //   imageDescription: "BickFather",
+    // },
     {
       image: MichealJackson,
       link: "https://opensea.io/",

@@ -32,20 +32,22 @@
 }
 
 .mintedContainer {
+  flex: 1;
   margin: 2rem 0;
   position: relative;
+  min-width: 38.5rem;
 }
 
-.mintedPreview {
+/* .mintedPreview {
   max-width: 350px;
   width: 100%;
   object-fit: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.mintedContainer::after {
+/* .mintedContainer::after {
   content: "";
   background-image: url("assets/images/bickFrame.svg");
   background-repeat: no-repeat;
@@ -58,7 +60,7 @@
   left: -0.5rem;
   right: -0.5rem;
   bottom: -0.5rem;
-}
+} */
 
 @media only screen and (min-width: 800px) {
   .contentContainer {
