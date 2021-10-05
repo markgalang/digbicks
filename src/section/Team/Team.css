@@ -1,0 +1,146 @@
+.teamContainer {
+  background-image: url(assets/images/collectionBg.jpg);
+  background-color: #c2faff !important;
+  padding: 2rem 0;
+}
+
+.teamContentContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.teamTitle {
+  color: #da3138;
+  font-size: 3rem;
+  font-family: "Alfa Slab One", cursive;
+  text-shadow: 0px 2px 0px rgba(100, 100, 100, 0.498039);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.teamMembersContainer {
+  display: flex;
+  max-width: 1000px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.teamMember {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  position: relative;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.teamMemberImage {
+  width: 100%;
+}
+
+.memberOverlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(218, 49, 56, 0.7);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 200;
+  backdrop-filter: blur(0.35rem);
+}
+
+.memberHorizontalLine {
+  width: 15%;
+  margin: 1.5rem;
+}
+
+.memberName {
+  font-size: 1.5rem;
+  letter-spacing: 1.2px;
+}
+
+.member-social-icon {
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 3rem;
+  padding: 12px;
+  border-radius: 4rem;
+  margin: 0.3rem;
+}
+
+#one:hover .memberOverlay {
+  bottom: 0;
+  height: 100%;
+  padding: 2rem;
+}
+
+#two:hover .memberOverlay {
+  bottom: 0;
+  height: 100%;
+  padding: 2rem;
+}
+
+#three:hover .memberOverlay {
+  bottom: 0;
+  height: 100%;
+  padding: 2rem;
+}
+
+#four:hover .memberOverlay {
+  bottom: 0;
+  height: 100%;
+  padding: 2rem;
+}
+
+#five:hover .memberOverlay {
+  bottom: 0;
+  height: 100%;
+  padding: 2rem;
+}
+
+#six:hover .memberOverlay {
+  bottom: 0;
+  height: 100%;
+  padding: 2rem;
+}
+
+#seven:hover .memberOverlay {
+  bottom: 0;
+  height: 100%;
+  padding: 2rem;
+}
+
+#eight:hover .memberOverlay {
+  bottom: 0;
+  height: 100%;
+  padding: 2rem;
+}
+
+#nine:hover .memberOverlay {
+  bottom: 0;
+  height: 100%;
+  padding: 2rem;
+}
+
+#ten:hover .memberOverlay {
+  bottom: 0;
+  height: 100%;
+  padding: 2rem;
+}

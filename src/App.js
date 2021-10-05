@@ -4,6 +4,7 @@ import HeroVideo from "section/heroVideo/heroVideo";
 import Minting from "section/Minting/Minting";
 import Roadmap from "section/Roadmap/Roadmap";
 import FAQ from "section/FAQ/FAQ";
+import Team from "section/Team/Team";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       {/* <Collection /> */}
       <Roadmap />
       <FAQ />
+      <Team />
       <Footer />
     </div>
   );
