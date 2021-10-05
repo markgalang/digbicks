@@ -43,7 +43,7 @@ export default (state = [], action) => {
       content: "The minting fee for each DigBicks is 0.069 ETH.",
     },
     {
-      title: "What can I do with my Super Shiba NFT?",
+      title: "What can I do with my DigBick NFT?",
       content:
         "Once you have a DigBicks,you will have this greater power and it's yours to use in any purposes. Please read our Terms & Conditions for more information.",
     },
