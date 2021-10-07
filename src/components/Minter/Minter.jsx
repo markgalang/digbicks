@@ -11,7 +11,7 @@ export default function Minter() {
   const dispatch = useDispatch();
   const { wallet, minter } = useSelector((state) => state);
   const [timer, setTimer] = useState("");
-  const preSaleDate = new Date("10-31-2021 08:00:00"); //October 30, 2021, 8am ph time
+  const preSaleDate = new Date("Sun Oct 31 2021 08:00:00 GMT+0800"); //October 30, 2021, 8am ph time
 
   const _handleChange = (newValue) => {
     let newCount = 1;
@@ -35,7 +35,7 @@ export default function Minter() {
     const countdownTimer = moment(preSaleDate).diff(moment(currentDateTime));
     if (countdownTimer <= 0) {
       clearInterval(1);
-      return setTimer(0);
+      return setTimer("0d: 0h: 0m: 0s");
     }
     const duration = moment.duration(countdownTimer);
 

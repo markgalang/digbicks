@@ -1,5 +1,5 @@
 import React from "react";
-import RoadmapImage from "assets/images/roadmap.svg";
+import RoadmapImage from "assets/images/roadmap.png";
 import "./Roadmap.css";
 
 function Roadmap() {
