@@ -32,6 +32,23 @@
   transition: all 0.2s;
 }
 
+.playIcon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #da3138;
+  height: 5rem;
+  width: 5rem;
+  display: block;
+}
+
+@media only screen and (min-width: 500px) {
+  .playIcon {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 600px) {
   .logoContainer {
     top: 1.5rem;

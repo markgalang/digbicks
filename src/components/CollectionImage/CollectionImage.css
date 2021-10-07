@@ -11,6 +11,8 @@
 
 .collectionImage {
   height: 17rem;
+  max-width: 300px;
+  width: 100%;
 }
 
 .frameContainer {
@@ -43,12 +45,12 @@
 
 @media (max-width: 768px) {
   .thumbnailFrame {
-    width: 300px;
+    max-width: 300px;
     height: 300px;
   }
 
   .thumbnailFrame div {
-    width: 200px !important;
+    max-width: 200px !important;
     height: 200px !important;
   }
 
@@ -60,5 +62,11 @@
 @media (max-width: 1200px) {
   .thumbnailFrame {
     padding: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .thumbnailFrame {
+    padding: 1rem;
   }
 }

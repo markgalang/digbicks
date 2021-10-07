@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import CummingSoon from "assets/videos/cumming-soon.mp4";
 import "./heroVideo.css";
 import DigBicks from "assets/images/logo.png";
-import { Volume2, VolumeX } from "react-feather";
+import { Volume2, VolumeX, PlayCircle } from "react-feather";
 
 function HeroVideo() {
   const [isMuted, setIsMuted] = useState(true);
@@ -15,6 +15,8 @@ function HeroVideo() {
       <div className="logoContainer">
         <img className="logo" src={DigBicks} alt="DigBicks" />
       </div>
+
+      <PlayCircle className="playIcon" onClick={() => setIsMuted(false)} />
 
       {isMuted ? (
         <VolumeX className="volumeIcon" onClick={() => setIsMuted(false)} />
