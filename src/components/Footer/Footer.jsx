@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 import DigBicks from "assets/images/logo.png";
 import { FaDiscord, FaTwitter } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -29,7 +30,12 @@ function Footer() {
         </a>
       </div>
 
-      <p>Dig Bicks All Rights Reserved</p>
+      <p>
+        Dig Bicks All Rights Reserved |{" "}
+        <Link to="/terms-and-condition" className="footerText">
+          Terms and Condition
+        </Link>
+      </p>
     </div>
   );
 }

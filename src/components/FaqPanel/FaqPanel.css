@@ -12,4 +12,10 @@ body .accordionTitleContainer svg {
 
 #panel1bh-content > div > p {
   font-weight: 200;
+  color: #fff !important;
+}
+
+#panel1bh-content > a {
+  font-weight: 200;
+  color: #fff !important;
 }

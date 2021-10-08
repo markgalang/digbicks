@@ -1,22 +1,12 @@
+import { Link } from "react-router-dom";
+
 export default (state = [], action) => {
   const initialData = [
     {
-      title: <strong>How can build my DigBicks Army?</strong>,
+      title: <strong>How can you build my DigBicks Army?</strong>,
       content: (
         <div>
-          <p>There are ways to build your digbicks army suchs as</p>
-          <br />
-          <p>
-            Whitelist Pre-sale - We appreciate the early adapters/supporters and
-            who have a great vibe in our community. Stay active, Stay tuned!
-          </p>
-          <p>
-            Launch Pre-sale - Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Dignissimos, autem.
-          </p>
-          <p>
-            Secondary Market - You can adopt them from this website and Opensea
-          </p>
+          <p>Fair Launch will happen and everyone deserve to get the D!</p>
         </div>
       ),
     },
@@ -44,8 +34,14 @@ export default (state = [], action) => {
     },
     {
       title: <strong>What can I do with my DigBick NFT?</strong>,
-      content:
-        "Once you have a DigBicks,you will have this greater power and it's yours to use in any purposes. Please read our Terms & Conditions for more information.",
+      content: (
+        <p>
+          Once you have a DigBicks,you will have this greater power and it's
+          yours to use in any purposes. Please read our{" "}
+          <Link to="/terms-and-condition"> Terms & Conditions</Link> for more
+          information.
+        </p>
+      ),
     },
     {
       title: <strong>What is NFT?</strong>,

@@ -1,0 +1,33 @@
+.termsContainer {
+  background-image: url(assets/images/collectionBg.jpg);
+  background-color: #c2faff !important;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  position: relative;
+}
+
+.termsContentContainer {
+  max-width: 900px;
+  width: 100%;
+  padding: 8rem 3rem;
+  margin: 0 auto;
+  line-height: 2rem;
+}
+
+.termsTitle {
+  color: #da3138;
+  font-size: 3rem;
+  font-family: "Alfa Slab One", cursive;
+  text-shadow: 0px 2px 0px rgba(100, 100, 100, 0.498039);
+  margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 3rem;
+  line-height: 2rem;
+}
+
+.termsLogo {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  max-width: 13rem;
+}

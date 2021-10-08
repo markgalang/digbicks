@@ -43,6 +43,16 @@
   color: #000;
 }
 
+.footerText {
+  text-decoration: none;
+  color: #000;
+}
+
+.footerText:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 800px) {
   .social-link:hover {
     transform: scale(1);
