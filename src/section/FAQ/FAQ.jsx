@@ -26,7 +26,7 @@ const FAQ = () => {
 
   return (
     <div className="faqContainer">
-      <div className="container faqContentContainer">
+      <div className="customContainer faqContentContainer">
         <div className="faqTitle">FAQs</div>
         {faqsMarkup}
       </div>

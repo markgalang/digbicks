@@ -71,11 +71,14 @@
 .memberHorizontalLine {
   width: 15%;
   margin: 1rem;
+  border: 1px solid white;
+  z-index: 11111;
 }
 
 .memberName {
   font-size: 1.5rem;
   letter-spacing: 1.2px;
+  margin-bottom: 0;
 }
 
 .member-social-icon {
@@ -84,7 +87,7 @@
   font-size: 2rem;
   padding: 6px;
   border-radius: 4rem;
-  margin: 1rem 0.3rem;
+  margin: 0.25rem 0.3rem;
   margin-bottom: 0;
 }
 

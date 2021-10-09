@@ -198,7 +198,7 @@ function Team() {
       <div id={member.key} key={index} className="teamMember">
         <div className="memberOverlay">
           <p className="memberName">{member.name}</p>
-          {member?.icons && <hr className="memberHorizontalLine" />}
+          {member?.icons && <div className="memberHorizontalLine" />}
           {member?.icons || null}
         </div>
         <img className="teamMemberImage" src={member.image} />
@@ -208,12 +208,12 @@ function Team() {
 
   return (
     <div className="teamContainer">
-      <div className="container teamContentContainer">
+      <div className="customContainer teamContentContainer">
         <div className="teamTitle">Team</div>
         <div id="zero" className="teamMember marginAuto">
           <div className="memberOverlay">
             <p className="memberName">Alvin</p>
-            <hr className="memberHorizontalLine" />
+            <div className="memberHorizontalLine" />
             <div className="memberCredentials">
               <p>Digital and irl Entrepreneur</p>
               <p>NFT, Sports card and sneaker collector</p>

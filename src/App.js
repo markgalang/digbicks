@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "pages/home/home.jsx";
 import TermsAndCondition from "pages/termsAndCondition/TermsAndCondition.jsx";
 import ScrollToTop from "components/ScrollTotop/ScrollToTop";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (

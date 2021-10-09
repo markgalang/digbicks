@@ -6,7 +6,7 @@ export default function Collection(props) {
   return (
     <>
       <section id="collection" className="collectionWrapper">
-        <div className="container">
+        <div className="customContainerx">
           <div className="collectionContentContainer">
             <div className="collectionContent">
               <div className="header">

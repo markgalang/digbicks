@@ -5,10 +5,12 @@ import Minting from "section/Minting/Minting";
 import Roadmap from "section/Roadmap/Roadmap";
 import FAQ from "section/FAQ/FAQ";
 import Team from "section/Team/Team";
+// import NavbarComponent from "components/Navbar/Navbar";
 
 function Home() {
   return (
     <div>
+      {/* <NavbarComponent /> */}
       <HeroVideo />
       <Minting />
       {/* <Hero isOpen={isOpen} setIsOpen={setIsOpen} />

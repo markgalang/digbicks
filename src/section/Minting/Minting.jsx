@@ -8,7 +8,7 @@ export default function Minting() {
   return (
     <div className="mintContainer">
       <div className="mintOverlay" />
-      <div className="container contentContainer">
+      <div className="customContainer contentContainer">
         <Minter />
         <div className="mintedContainer">
           <CollectionImagesContainer />
