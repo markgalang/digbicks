@@ -2,6 +2,7 @@
   background-image: url(assets/images/collectionBg.jpg);
   background-color: #c2faff !important;
   padding: 2rem 0;
+  background-size: cover;
 }
 
 .teamContentContainer {
@@ -49,6 +50,7 @@
   bottom: 100%;
   left: 0;
   right: 0;
+  bottom: 0;
   background-color: rgba(218, 49, 56, 0.7);
   overflow: hidden;
   width: 100%;
@@ -68,7 +70,7 @@
 
 .memberHorizontalLine {
   width: 15%;
-  margin: 1.5rem;
+  margin: 1rem;
 }
 
 .memberName {
@@ -79,10 +81,31 @@
 .member-social-icon {
   color: #fff;
   border: 1px solid #fff;
-  font-size: 3rem;
-  padding: 12px;
+  font-size: 2rem;
+  padding: 6px;
   border-radius: 4rem;
-  margin: 0.3rem;
+  margin: 1rem 0.3rem;
+  margin-bottom: 0;
+}
+
+.memberCredentials {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.memberCredentials p {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.marginAuto {
+  margin: 1rem auto;
+}
+
+#zero:hover .memberOverlay {
+  bottom: 0;
+  height: 100%;
+  padding: 2rem;
 }
 
 #one:hover .memberOverlay {

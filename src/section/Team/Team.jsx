@@ -1,47 +1,26 @@
 import React from "react";
 import "./Team.css";
 import BickFather from "assets/bicks/bick-father.jpg";
-import SupremeLeader from "assets/bicks/supreme-leader.jpg";
-import BobMarley from "assets/bicks/bob.jpg";
-import Trump from "assets/bicks/trump.jpg";
-import Pope from "assets/bicks/pope.png";
-import MichealJackson from "assets/bicks/michael-jackson.jpg";
+import SG from "assets/images/SG.png";
+import AT from "assets/images/AT.png";
+import Marso from "assets/images/Marso.png";
+import EJ from "assets/images/EJ.png";
+import JM from "assets/images/JM.png";
+import MT from "assets/images/MT.png";
+import MG from "assets/images/MG.png";
 import { FaDiscord, FaTwitter } from "react-icons/fa";
 
 function Team() {
   const members = [
     {
-      key: "one",
-      image: BickFather,
-      name: "Bick Father",
-      icons: (
-        <div>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://twitter.com/DigBickNFT"
-            className="member-social-link"
-          >
-            <FaTwitter className="member-social-icon" />
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://discord.gg/8qXuhTzn"
-            className="member-social-link"
-          >
-            <FaDiscord className="member-social-icon" />
-          </a>
-        </div>
-      ),
-      imageDescription: "BickFather",
-    },
-    {
       key: "two",
-      image: SupremeLeader,
-      name: "Supreme Leader",
+      image: Marso,
+      name: "Marso",
       icons: (
-        <div>
+        <div className="memberCredentials">
+          <p>NFT artist vampire</p>
+          <p>Part-time Degen</p>
+          <p>Pussy-cat lover</p>
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -64,10 +43,14 @@ function Team() {
     },
     {
       key: "three",
-      image: BobMarley,
-      name: "Bob Marley",
+      image: SG,
+      name: "Sebastian",
       icons: (
-        <div>
+        <div className="memberCredentials">
+          <p>Solidity Developer </p>
+          <p>Professional NFT Degen</p>
+          <p>Wallet stalking for a living</p>
+          <p>Baby Bick</p>
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -90,10 +73,14 @@ function Team() {
     },
     {
       key: "four",
-      image: Trump,
-      name: "Trump",
+      image: MT,
+      name: "Mervin",
       icons: (
-        <div>
+        <div className="memberCredentials">
+          <p>AWS Certified solution architect/ Cloud Solutions Architect</p>
+          <p>Early adaptor bought cryptopussies but failed to buy punks</p>
+          <p>Wine & Alcohol connoisseur</p>
+          <p>Uncle Bick</p>
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -116,10 +103,14 @@ function Team() {
     },
     {
       key: "five",
-      image: Pope,
-      name: "Pope",
+      image: EJ,
+      name: "Skylar",
       icons: (
-        <div>
+        <div className="memberCredentials">
+          <p>Senior SAP Consultant </p>
+          <p>Multi-instrumentalist</p>
+          <p>Tiktokerist</p>
+          <p>Bick Lover</p>
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -142,10 +133,14 @@ function Team() {
     },
     {
       key: "six",
-      image: MichealJackson,
-      name: "Micheal Jackson",
+      image: AT,
+      name: "Armin",
       icons: (
-        <div>
+        <div className="memberCredentials">
+          <p>Senior SAP Consultant </p>
+          <p>Financial Advisor irl</p>
+          <p>Pornhub enthusiast</p>
+          <p>Daddy Bick</p>
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -168,36 +163,14 @@ function Team() {
     },
     {
       key: "seven",
-      image: SupremeLeader,
-      name: "Supreme Leader",
+      image: MG,
+      name: "MG",
       icons: (
-        <div>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://twitter.com/DigBickNFT"
-            className="member-social-link"
-          >
-            <FaTwitter className="member-social-icon" />
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://discord.gg/8qXuhTzn"
-            className="member-social-link"
-          >
-            <FaDiscord className="member-social-icon" />
-          </a>
-        </div>
-      ),
-      imageDescription: "BickFather",
-    },
-    {
-      key: "eight",
-      image: Trump,
-      name: "Trump",
-      icons: (
-        <div>
+        <div className="memberCredentials">
+          <p>Developer</p>
+          <p>Minesweeper pro</p>
+          <p>Undefeated in Chess (easy mode)</p>
+          <p>Adopted Bick</p>
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -237,6 +210,35 @@ function Team() {
     <div className="teamContainer">
       <div className="container teamContentContainer">
         <div className="teamTitle">Team</div>
+        <div id="zero" className="teamMember marginAuto">
+          <div className="memberOverlay">
+            <p className="memberName">Alvin</p>
+            <hr className="memberHorizontalLine" />
+            <div className="memberCredentials">
+              <p>Digital and irl Entrepreneur</p>
+              <p>NFT, Sports card and sneaker collector</p>
+              <p>Failed to buy punks </p>
+              <p>Bick Father</p>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://twitter.com/DigBickNFT"
+                className="member-social-link"
+              >
+                <FaTwitter className="member-social-icon" />
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://discord.gg/8qXuhTzn"
+                className="member-social-link"
+              >
+                <FaDiscord className="member-social-icon" />
+              </a>
+            </div>
+          </div>
+          <img className="teamMemberImage" src={BickFather} />
+        </div>
         <div className="teamMembersContainer">{membersMarkup}</div>
       </div>
     </div>
