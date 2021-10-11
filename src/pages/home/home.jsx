@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Footer from "components/Footer/Footer";
 import Collection from "section/Collection/Collection";
 import HeroVideo from "section/heroVideo/heroVideo";

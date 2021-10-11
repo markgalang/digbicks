@@ -76,6 +76,15 @@ const NavbarComponent = () => {
             </NavDropdown>
 
             <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com/DigBickNFT"
+              className="nav-social-link"
+            >
+              <FaTwitter className="social-icon" />
+            </a>
+
+            <a
               href="https://discord.gg/MPBfmRyjDT"
               rel="noreferrer"
               target="_blank"
@@ -85,14 +94,9 @@ const NavbarComponent = () => {
               Join our Discord
             </a>
 
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://twitter.com/DigBickNFT"
-              className="nav-social-link"
-            >
-              <FaTwitter className="social-icon" />
-            </a>
+            <button className="connectButton" onClick={() => alert("connect")}>
+              Connect
+            </button>
           </div>
         </Navbar.Collapse>
       </Navbar>
