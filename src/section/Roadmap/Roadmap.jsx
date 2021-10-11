@@ -4,7 +4,7 @@ import "./Roadmap.css";
 
 function Roadmap() {
   return (
-    <div className="roadmapContainer">
+    <div id="roadmap" className="roadmapContainer">
       <div className="customContainer roadmapContentContainer">
         <div className="roadmapTitle">Roadmap</div>
         <img

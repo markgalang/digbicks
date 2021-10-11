@@ -12,9 +12,9 @@ function HeroVideo() {
         <source src={CummingSoon} type="video/mp4" />
       </video>
 
-      <div className="logoContainer">
+      {/* <div className="logoContainer">
         <img className="logo" src={DigBicks} alt="DigBicks" />
-      </div>
+      </div> */}
 
       <PlayCircle className="playIcon" onClick={() => setIsMuted(false)} />
 

@@ -37,10 +37,10 @@ const NavbarComponent = () => {
 
   return (
     <div
-      // className={`navbar-wrapper ${
-      //   (isStickyNav || isExpanded) && "isStickyNav"
-      // }`}
-      className={`navbar-wrapper ${false && "isStickyNav"}`}
+      className={`navbar-wrapper ${
+        (isStickyNav || isExpanded) && "isStickyNav"
+      }`}
+      //   className={`navbar-wrapper ${false && "isStickyNav"}`}
     >
       <Navbar
         collapseOnSelect
@@ -50,7 +50,7 @@ const NavbarComponent = () => {
         className={`navbar-container`}
       >
         <Navbar.Brand as="span" href="#home">
-          <Link to="home" className="navbar-logo">
+          <Link to="/" className="navbar-logo">
             <img src={DigBicksLogo} alt="DigBicks" placeholder="DigBicks" />
           </Link>
         </Navbar.Brand>
@@ -64,9 +64,14 @@ const NavbarComponent = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <div className="navbar-menus">
-            <NavDropdown title="More" id="basic-nav-dropdown">
+            <NavDropdown
+              title="Home"
+              id="basic-nav-dropdown"
+              className="dropdownText"
+            >
               <NavDropdown.Item href="#bick-land">Bick Land</NavDropdown.Item>
               <NavDropdown.Item href="#roadmap">Roadmap</NavDropdown.Item>
+              <NavDropdown.Item href="#faqs">FAQs</NavDropdown.Item>
               <NavDropdown.Item href="#team">Team</NavDropdown.Item>
             </NavDropdown>
 
@@ -84,7 +89,7 @@ const NavbarComponent = () => {
               target="_blank"
               rel="noopener noreferrer"
               href="https://twitter.com/DigBickNFT"
-              className="social-link"
+              className="nav-social-link"
             >
               <FaTwitter className="social-icon" />
             </a>

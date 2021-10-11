@@ -207,7 +207,7 @@ function Team() {
   });
 
   return (
-    <div className="teamContainer">
+    <div id="team" className="teamContainer">
       <div className="customContainer teamContentContainer">
         <div className="teamTitle">Team</div>
         <div id="zero" className="teamMember marginAuto">

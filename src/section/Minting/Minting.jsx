@@ -6,7 +6,7 @@ import CollectionImagesContainer from "components/CollectionImages/CollectionIma
 
 export default function Minting() {
   return (
-    <div className="mintContainer">
+    <div id="bick-land" className="mintContainer">
       <div className="mintOverlay" />
       <div className="customContainer contentContainer">
         <Minter />
