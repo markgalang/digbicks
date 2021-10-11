@@ -10,9 +10,10 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 // Image
 import DigBicksLogo from "assets/images/logo.png";
 
-const NavbarComponent = () => {
+const NavbarComponent = (props) => {
   const [isStickyNav, setIsStickyNav] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
+  const { isWalletConnected, isLoading, handleConnect } = props;
 
   useEffect(() => {
     const scrollCallBack = () => {
@@ -35,6 +36,10 @@ const NavbarComponent = () => {
     setIsExpanded(false);
   };
 
+  const userAccountId =
+    window.account?.substring(0, 4) +
+    "..." +
+    window.account?.substring(window.account.length - 4, window.account.length);
   return (
     <div
       className={`navbar-wrapper ${
@@ -94,8 +99,8 @@ const NavbarComponent = () => {
               Join our Discord
             </a>
 
-            <button className="connectButton" onClick={() => alert("connect")}>
-              Connect
+            <button className="connectButton" onClick={handleConnect}>
+              {isWalletConnected ? userAccountId : "Connect"}
             </button>
           </div>
         </Navbar.Collapse>

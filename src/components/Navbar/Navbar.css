@@ -27,14 +27,12 @@ body .isStickyNav {
   background: #da3138;
   border: 3px solid #bf0910;
   border-radius: 0.5rem;
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 1.25rem;
   font-size: 0.8rem;
-  min-width: 10rem;
-
+  min-width: 5rem;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.3s;
-  letter-spacing: 1px;
   margin: 0 0.5rem;
 }
 
