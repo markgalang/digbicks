@@ -76,7 +76,7 @@ const NavbarComponent = () => {
             </NavDropdown>
 
             <a
-              href="https://discord.gg/8qXuhTzn"
+              href="https://discord.gg/MPBfmRyjDT"
               rel="noreferrer"
               target="_blank"
               className="discordButton"

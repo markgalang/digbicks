@@ -97,7 +97,7 @@ export default function Minter() {
 
       <p className="pricePreview">{`Final Price: ${(
         wallet.ethPrice * minter.mintCount
-      ).toFixed(5)} ETH`}</p>
+      ).toFixed(3)} ETH`}</p>
     </div>
   );
 }

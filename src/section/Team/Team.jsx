@@ -15,7 +15,7 @@ function Team() {
     {
       key: "two",
       image: Marso,
-      name: "Marso",
+      name: "Pxzmarso",
       icons: (
         <div className="memberCredentials">
           <p>NFT artist vampire</p>
@@ -24,19 +24,19 @@ function Team() {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://twitter.com/DigBickNFT"
+            href="https://twitter.com/pxzmarso"
             className="member-social-link"
           >
             <FaTwitter className="member-social-icon" />
           </a>
-          <a
+          {/* <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://discord.gg/8qXuhTzn"
             className="member-social-link"
           >
             <FaDiscord className="member-social-icon" />
-          </a>
+          </a> */}
         </div>
       ),
       imageDescription: "BickFather",
@@ -44,29 +44,13 @@ function Team() {
     {
       key: "three",
       image: SG,
-      name: "Sebastian",
+      name: "Koljak",
       icons: (
         <div className="memberCredentials">
           <p>Solidity Developer </p>
           <p>Professional NFT Degen</p>
           <p>Wallet stalking for a living</p>
           <p>Baby Bick</p>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://twitter.com/DigBickNFT"
-            className="member-social-link"
-          >
-            <FaTwitter className="member-social-icon" />
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://discord.gg/8qXuhTzn"
-            className="member-social-link"
-          >
-            <FaDiscord className="member-social-icon" />
-          </a>
         </div>
       ),
       imageDescription: "BickFather",
@@ -74,29 +58,13 @@ function Team() {
     {
       key: "four",
       image: MT,
-      name: "Mervin",
+      name: "UncleBick",
       icons: (
         <div className="memberCredentials">
           <p>AWS Certified solution architect/ Cloud Solutions Architect</p>
           <p>Early adaptor bought cryptopussies but failed to buy punks</p>
           <p>Wine & Alcohol connoisseur</p>
           <p>Uncle Bick</p>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://twitter.com/DigBickNFT"
-            className="member-social-link"
-          >
-            <FaTwitter className="member-social-icon" />
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://discord.gg/8qXuhTzn"
-            className="member-social-link"
-          >
-            <FaDiscord className="member-social-icon" />
-          </a>
         </div>
       ),
       imageDescription: "BickFather",
@@ -111,22 +79,6 @@ function Team() {
           <p>Multi-instrumentalist</p>
           <p>Tiktokerist</p>
           <p>Bick Lover</p>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://twitter.com/DigBickNFT"
-            className="member-social-link"
-          >
-            <FaTwitter className="member-social-icon" />
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://discord.gg/8qXuhTzn"
-            className="member-social-link"
-          >
-            <FaDiscord className="member-social-icon" />
-          </a>
         </div>
       ),
       imageDescription: "BickFather",
@@ -134,29 +86,13 @@ function Team() {
     {
       key: "six",
       image: AT,
-      name: "Armin",
+      name: "UncleBick",
       icons: (
         <div className="memberCredentials">
           <p>Senior SAP Consultant </p>
           <p>Financial Advisor irl</p>
           <p>Pornhub enthusiast</p>
           <p>Daddy Bick</p>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://twitter.com/DigBickNFT"
-            className="member-social-link"
-          >
-            <FaTwitter className="member-social-icon" />
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://discord.gg/8qXuhTzn"
-            className="member-social-link"
-          >
-            <FaDiscord className="member-social-icon" />
-          </a>
         </div>
       ),
       imageDescription: "BickFather",
@@ -164,29 +100,13 @@ function Team() {
     {
       key: "seven",
       image: MG,
-      name: "MG",
+      name: "AdoptedBick",
       icons: (
         <div className="memberCredentials">
           <p>Developer</p>
           <p>Minesweeper pro</p>
           <p>Undefeated in Chess (easy mode)</p>
           <p>Adopted Bick</p>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://twitter.com/DigBickNFT"
-            className="member-social-link"
-          >
-            <FaTwitter className="member-social-icon" />
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://discord.gg/8qXuhTzn"
-            className="member-social-link"
-          >
-            <FaDiscord className="member-social-icon" />
-          </a>
         </div>
       ),
       imageDescription: "BickFather",
@@ -212,7 +132,7 @@ function Team() {
         <div className="teamTitle">Team</div>
         <div id="zero" className="teamMember marginAuto">
           <div className="memberOverlay">
-            <p className="memberName">Alvin</p>
+            <p className="memberName">BickFather</p>
             <div className="memberHorizontalLine" />
             <div className="memberCredentials">
               <p>Digital and irl Entrepreneur</p>
@@ -222,7 +142,7 @@ function Team() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://twitter.com/DigBickNFT"
+                href="https://twitter.com/BickFather"
                 className="member-social-link"
               >
                 <FaTwitter className="member-social-icon" />

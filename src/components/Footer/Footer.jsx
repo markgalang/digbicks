@@ -23,7 +23,7 @@ function Footer() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://discord.gg/8qXuhTzn"
+          href="https://discord.gg/MPBfmRyjDT"
           className="social-link"
         >
           <FaDiscord className="social-icon" />
@@ -31,7 +31,7 @@ function Footer() {
       </div>
 
       <p>
-        Dig Bicks All Rights Reserved |{" "}
+        DigBicks All Rights Reserved |{" "}
         <Link to="/terms-and-condition" className="footerText">
           Terms and Condition
         </Link>

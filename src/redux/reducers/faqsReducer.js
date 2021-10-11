@@ -3,12 +3,9 @@ import { Link } from "react-router-dom";
 export default (state = [], action) => {
   const initialData = [
     {
-      title: <strong>How can you build my DigBicks Army?</strong>,
-      content: (
-        <div>
-          <p>Fair Launch will happen and everyone deserve to get the D!</p>
-        </div>
-      ),
+      title: <strong>What is NFT?</strong>,
+      content:
+        "A non-fungible token (NFT) is a unit of data stored on a digital ledger, called a blockchain, that certifies a digital asset to be unique and therefore not interchangeable.",
     },
     {
       title: <strong>What are DigBicks?</strong>,
@@ -29,8 +26,67 @@ export default (state = [], action) => {
       ),
     },
     {
-      title: <strong>How much does it cost to build a DigBicks army?</strong>,
+      title: <strong>How can I build my DigBicks Army?</strong>,
+      content: (
+        <div>
+          <p>Fair Launch will happen and everyone deserve to get the D!</p>
+        </div>
+      ),
+    },
+    {
+      title: <strong>How can I get the D?</strong>,
+      content: (
+        <div>
+          <p>
+            1. Download and install a Chrom browser plugin called{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en"
+            >
+              {" "}
+              MetaMask
+            </a>
+            . This will allow NFT marketplaces website to access to your
+            Ethereum account.
+          </p>
+          <p>
+            2. Ether is required for new accounts. The MetaMask plugin has a
+            button that will allow you to buy Ether from your desired exchange.
+          </p>
+          <p>
+            3. Once you have the plugin installed, This website wille recognize
+            it and will allow you to bid on, buy and sell DigBicks directly in
+            the interface
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: <strong>How much does it cost to build a DigBicks Army?</strong>,
       content: "The minting fee for each DigBicks is 0.069 ETH.",
+    },
+    {
+      title: <strong>How many DigBicks i can mint at a time?</strong>,
+      content:
+        "We know how badly you want them, but we are limiting the minting to 5 DigBicks per transaction. Afterall, everybody deserves the D!",
+    },
+    {
+      title: <strong>How I view my DigBicks after minting?</strong>,
+      content: (
+        <p>
+          Your DigBicks will appear in whatever address, or connected wallet you
+          used to purchase it. You can also see it on{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://opensea.io/"
+          >
+            {" "}
+            OpenSea.
+          </a>
+        </p>
+      ),
     },
     {
       title: <strong>What can I do with my DigBick NFT?</strong>,
@@ -38,15 +94,16 @@ export default (state = [], action) => {
         <p>
           Once you have a DigBicks,you will have this greater power and it's
           yours to use in any purposes. Please read our{" "}
-          <Link to="/terms-and-condition"> Terms & Conditions</Link> for more
-          information.
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://discord.com/invite/MPBfmRyjDT"
+          >
+            Join our discord our discord community
+          </a>{" "}
+          for more information.
         </p>
       ),
-    },
-    {
-      title: <strong>What is NFT?</strong>,
-      content:
-        "A non-fungible token (NFT) is a unit of data stored on a digital ledger, called a blockchain, that certifies a digital asset to be unique and therefore not interchangeable.",
     },
   ];
   return [...initialData];

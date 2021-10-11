@@ -17,6 +17,10 @@
   padding: 0 2rem;
 }
 
+.MuiAccordionDetails-root > a {
+  color: #fff;
+}
+
 @media (min-width: 600px) {
   .faqContentContainer {
     padding: 0 5rem;
