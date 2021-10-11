@@ -17,19 +17,6 @@ export default (state = [], action) => {
             carefully curated attributes such as headgears, mouth accessories,
             weapons, and more.{" "}
           </p>
-          <br />
-          <p>
-            They are all fun and quirky, but you’d be more surprised by the rare
-            ones! Exciting, right?{" "}
-          </p>
-        </div>
-      ),
-    },
-    {
-      title: <strong>How can I build my DigBicks Army?</strong>,
-      content: (
-        <div>
-          <p>Fair Launch will happen and everyone deserve to get the D!</p>
         </div>
       ),
     },
@@ -67,12 +54,12 @@ export default (state = [], action) => {
       content: "The minting fee for each DigBicks is 0.069 ETH.",
     },
     {
-      title: <strong>How many DigBicks i can mint at a time?</strong>,
+      title: <strong>How many DigBicks can I mint at a time?</strong>,
       content:
         "We know how badly you want them, but we are limiting the minting to 5 DigBicks per transaction. Afterall, everybody deserves the D!",
     },
     {
-      title: <strong>How I view my DigBicks after minting?</strong>,
+      title: <strong>How can I view my DigBicks after minting?</strong>,
       content: (
         <p>
           Your DigBicks will appear in whatever address, or connected wallet you
@@ -93,13 +80,13 @@ export default (state = [], action) => {
       content: (
         <p>
           Once you have a DigBicks,you will have this greater power and it's
-          yours to use in any purposes. Please read our{" "}
+          yours to use in any purposes.
           <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://discord.com/invite/MPBfmRyjDT"
           >
-            Join our discord our discord community
+            Join our discord community
           </a>{" "}
           for more information.
         </p>
