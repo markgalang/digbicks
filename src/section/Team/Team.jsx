@@ -86,12 +86,13 @@ function Team() {
     {
       key: "six",
       image: AT,
-      name: "UncleBick",
+      name: "Mondo",
       icons: (
         <div className="memberCredentials">
           <p>Senior SAP Consultant </p>
           <p>Financial Advisor irl</p>
-          <p>Pornhub enthusiast</p>
+          <p>Beach Lover</p>
+          <p>Art Junkie</p>
           <p>Daddy Bick</p>
         </div>
       ),
