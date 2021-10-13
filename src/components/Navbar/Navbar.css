@@ -22,6 +22,24 @@ body .isStickyNav {
   background-color: rgba(255, 255, 255, 1) !important;
 }
 
+.connectButton {
+  color: #fff;
+  background: #da3138;
+  border: 3px solid #bf0910;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.25rem;
+  font-size: 0.8rem;
+  min-width: 5rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+  margin: 0 0.5rem;
+}
+
+.connectButton:hover {
+  text-decoration: underline;
+}
+
 .navbar-logo {
   max-width: 11rem;
   width: 100%;
@@ -84,7 +102,7 @@ body .nav-link {
   transition: all 0.3s;
   color: #fff;
   letter-spacing: 1px;
-  margin-left: 0.5rem;
+  margin: 0 0.5rem;
 }
 
 .discordButton:hover {
@@ -192,5 +210,10 @@ body .nav-link {
     padding-left: 10px;
     border-bottom: none;
     border-left: 3px solid #ff45a0;
+  }
+
+  .discordButton,
+  .connectButton {
+    margin: 0.5rem;
   }
 }

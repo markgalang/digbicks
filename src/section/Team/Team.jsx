@@ -138,6 +138,7 @@ function Team() {
             <div className="memberCredentials">
               <p>Digital and irl Entrepreneur</p>
               <p>NFT, Sports card and sneaker collector</p>
+              <p>MIT Graduate</p>
               <p>Failed to buy punks </p>
               <p>Bick Father</p>
               <a

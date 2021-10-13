@@ -10,6 +10,7 @@ export default function Minter() {
 
   const dispatch = useDispatch();
   const { wallet, minter } = useSelector((state) => state);
+  const blockchain = useSelector((state) => state.blockchain);
   const [timer, setTimer] = useState("");
   const preSaleDate = new Date("Sun Oct 31 2021 08:00:00 GMT+0800"); //October 30, 2021, 8am ph time
 
@@ -90,7 +91,11 @@ export default function Minter() {
             inputMode="integer"
           />
         </div>
-        <button className="mintBtn" onClick={_handleMintClick}>
+        <button
+          className="mintBtn"
+          onClick={_handleMintClick}
+          disabled={blockchain?.loading}
+        >
           Mint Now{" "}
         </button>
       </div>
