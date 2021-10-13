@@ -7,15 +7,22 @@ import Roadmap from "section/Roadmap/Roadmap";
 import FAQ from "section/FAQ/FAQ";
 import Team from "section/Team/Team";
 import NavbarComponent from "components/Navbar/Navbar";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { handleWalletConnect } from "../../redux/actions";
 
 function Home() {
   const dispatch = useDispatch();
+  const blockchain = useSelector((state) => state.blockchain);
 
   useEffect(() => {
     dispatch(handleWalletConnect());
   }, []);
+
+  useEffect(() => {
+    if (blockchain.errorMsg) {
+      alert(blockchain.errorMsg);
+    }
+  }, [blockchain.errorMsg]);
 
   return (
     <div>

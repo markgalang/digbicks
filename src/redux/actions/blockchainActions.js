@@ -65,10 +65,14 @@ export const handleWalletConnect = () => {
           });
           // Add listeners end
         } else {
-          dispatch(connectFailed("Change network to ETH network."));
+          dispatch(connectFailed("Pleace Change network to ETH network."));
         }
       } catch (err) {
-        dispatch(connectFailed("Something went wrong."));
+        dispatch(
+          connectFailed(
+            "Something went wrong. Transaction failed. Please try again."
+          )
+        );
       }
     } else {
       dispatch(connectFailed("Please Install Metamask to connect."));
