@@ -2,18 +2,21 @@ import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { FaTwitter } from "react-icons/fa";
-
+import { useSelector, useDispatch } from "react-redux";
 // Bootstrap
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 // Image
 import DigBicksLogo from "assets/images/logo.png";
+import { handleWalletConnect } from "redux/actions";
 
 const NavbarComponent = (props) => {
   const [isStickyNav, setIsStickyNav] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
-  const { isWalletConnected, isLoading, handleConnect } = props;
+  const blockchain = useSelector((state) => state.blockchain);
+  const isWalletConnected = blockchain?.account;
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const scrollCallBack = () => {
@@ -37,15 +40,17 @@ const NavbarComponent = (props) => {
   };
 
   const userAccountId =
-    window.account?.substring(0, 4) +
+    blockchain.account?.substring(0, 4) +
     "..." +
-    window.account?.substring(window.account.length - 4, window.account.length);
+    blockchain.account?.substring(
+      blockchain?.account.length - 4,
+      blockchain?.account.length
+    );
   return (
     <div
       className={`navbar-wrapper ${
         (isStickyNav || isExpanded) && "isStickyNav"
       }`}
-      //   className={`navbar-wrapper ${false && "isStickyNav"}`}
     >
       <Navbar
         collapseOnSelect
@@ -99,7 +104,10 @@ const NavbarComponent = (props) => {
               Join our Discord
             </a>
 
-            <button className="connectButton" onClick={handleConnect}>
+            <button
+              className="connectButton"
+              onClick={() => dispatch(handleWalletConnect())}
+            >
               {isWalletConnected ? userAccountId : "Connect"}
             </button>
           </div>
