@@ -15,7 +15,7 @@ function Team() {
     {
       key: "two",
       image: Marso,
-      name: "Pxzmarso",
+      name: "Bickbick",
       icons: (
         <div className="memberCredentials">
           <p>NFT artist vampire</p>
@@ -44,7 +44,7 @@ function Team() {
     {
       key: "three",
       image: SG,
-      name: "Koljak",
+      name: "D.o.g.g.e",
       icons: (
         <div className="memberCredentials">
           <p>Solidity Developer </p>
