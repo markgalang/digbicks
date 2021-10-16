@@ -25,7 +25,7 @@ export default (state = [], action) => {
       content: (
         <div>
           <p>
-            1. Download and install a Chrom browser plugin called{" "}
+            1. Download and install a Chrome browser plugin called{" "}
             <a
               target="_blank"
               rel="noopener noreferrer"
