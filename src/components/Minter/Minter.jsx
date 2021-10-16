@@ -2,10 +2,16 @@ import React, { useState, useEffect } from "react";
 import "./Minter.css";
 import NumericInput from "react-numeric-input";
 import { useSelector, useDispatch } from "react-redux";
-import { setMintCount } from "redux/actions";
+import {
+  setMintCount,
+  showModal,
+  handleWalletConnect,
+  showAlert,
+} from "redux/actions";
 import moment from "moment";
-import { DIGBICK_MINT_COST } from "../../util/enums";
+import { DIGBICK_MINT_COST, ERROR_MESSAGE } from "../../util/enums";
 import Spinner from "react-bootstrap/Spinner";
+import { MESSAGE_TYPE } from "util/enums";
 
 export default function Minter() {
   const isSmallScreen = window.innerWidth < 600;
@@ -15,7 +21,7 @@ export default function Minter() {
   const blockchain = useSelector((state) => state.blockchain);
   const [timer, setTimer] = useState("");
   const [isMinting, setIsMinting] = useState(false);
-  const [response, setResponse] = useState("Start Minting");
+  const isWalletConnected = blockchain?.account;
 
   const preSaleDate = new Date("Sun Oct 31 2021 08:00:00 GMT+0800"); //October 30, 2021, 8am ph time
 
@@ -33,6 +39,13 @@ export default function Minter() {
   };
 
   const _handleMintClick = () => {
+    if (blockchain?.loading || isMinting) return;
+
+    if (!isWalletConnected) {
+      dispatch(handleWalletConnect());
+      return;
+    }
+
     setIsMinting(true);
 
     const mintTotalCost = DIGBICK_MINT_COST * minter.mintCount;
@@ -45,14 +58,24 @@ export default function Minter() {
       })
       .once("error", (err) => {
         setIsMinting(false);
-        setResponse(err);
-        console.log(err);
-        alert(err.message);
+        const errorMessage =
+          err.code !== 4001 ? ERROR_MESSAGE.DEFAULT : err.message;
+
+        dispatch(
+          showAlert({
+            type: MESSAGE_TYPE.ERROR,
+            message: errorMessage,
+          })
+        );
       })
       .then((receipt) => {
         setIsMinting(false);
-        setResponse(receipt);
-        alert(receipt);
+        dispatch(
+          showModal({
+            type: MESSAGE_TYPE.SUCCESS,
+            message: "MINTED SUCCESSFULLY",
+          })
+        );
       });
   };
 

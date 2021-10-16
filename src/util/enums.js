@@ -385,3 +385,13 @@ export const DIGBICKS_CONTRACT_ABI = [
     type: "function",
   },
 ];
+
+export const MESSAGE_TYPE = {
+  WARNING: "warning",
+  ERROR: "danger",
+  SUCCESS: "success",
+};
+
+export const ERROR_MESSAGE = {
+  DEFAULT: "Something went wrong. Please try again.",
+};

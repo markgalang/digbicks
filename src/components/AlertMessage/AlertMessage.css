@@ -1,0 +1,21 @@
+body .customAlert {
+  z-index: 9999999999;
+  max-width: 800px;
+  position: fixed !important;
+  top: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2.5rem 2rem;
+  margin: 0;
+}
+
+body .customAlert p {
+  margin: 0;
+}
+
+body .alertCloseButton {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  cursor: pointer;
+}

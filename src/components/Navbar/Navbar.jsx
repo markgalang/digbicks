@@ -43,6 +43,11 @@ const NavbarComponent = (props) => {
     }
   };
 
+  const _handleClick = () => {
+    if (isWalletConnected || isLoading) return;
+    dispatch(handleWalletConnect());
+  };
+
   const toggleCollapsibleMenu = () => {
     setIsExpanded((prevState) => !prevState);
   };
@@ -116,10 +121,7 @@ const NavbarComponent = (props) => {
               Join our Discord
             </a>
 
-            <button
-              className="connectButton"
-              onClick={() => dispatch(handleWalletConnect())}
-            >
+            <button className="connectButton" onClick={_handleClick}>
               {_getConnectButtonText()}
             </button>
           </div>

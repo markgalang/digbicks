@@ -4,7 +4,7 @@ body .navbar-wrapper {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999999;
+  z-index: 900;
   font-family: "Inter", sans-serif;
 }
 
