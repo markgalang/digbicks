@@ -1,3 +1,75 @@
-.customModal {
-  border: 2px solid red;
+body .modal-content {
+  background-color: transparent;
+  border: none;
+  max-width: 1000px;
+  width: 100%;
+}
+body .modal-dialog {
+  max-width: 700px;
+  width: 100%;
+}
+
+body .customModalBody {
+  border: 0.75rem solid #da3137;
+  border-radius: 1rem;
+  position: relative;
+  padding: 3rem;
+  background-color: #ffa8aa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalCloseBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modalTitle {
+  color: #da3138;
+  font-size: 4rem;
+  font-family: "Alfa Slab One", cursive;
+  letter-spacing: 1px;
+}
+
+.modalDescription {
+  text-align: center;
+  color: #fff;
+}
+
+.modalLink {
+  font-weight: 700;
+  color: #fff;
+}
+
+.modalButton {
+  color: #fff;
+  background: #da3138;
+  border: 3px solid #bf0910;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.25rem;
+  font-size: 0.8rem;
+  min-width: 5rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+  margin-top: 2rem;
+}
+
+.modalButton:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 800px) {
+  .modalTitle {
+    font-size: 2rem;
+  }
+
+  body .customModalBody {
+    padding: 3rem 1;
+  }
 }
