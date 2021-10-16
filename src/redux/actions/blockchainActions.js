@@ -1,5 +1,9 @@
 // constants
 import Web3 from "web3";
+import {
+  DIGBICKS_CONTRACT_ADDRESS,
+  DIGBICKS_CONTRACT_ABI,
+} from "../../util/enums";
 // import SmartContract from "../../contracts/SmartContract.json";
 // log
 // import { fetchData } from "../data/dataActions";
@@ -44,15 +48,15 @@ export const handleWalletConnect = () => {
           method: "net_version",
         });
         // const NetworkData = await SmartContract.networks[networkId];
-        if (networkId.toString() === "1") {
-          // const SmartContractObj = new web3.eth.Contract(
-          //   SmartContract.abi,
-          //   NetworkData.address
-          // );
+        if (networkId.toString() === "4") {
+          const SmartContractObj = new web3.eth.Contract(
+            DIGBICKS_CONTRACT_ABI,
+            DIGBICKS_CONTRACT_ADDRESS
+          );
           dispatch(
             connectSuccess({
               account: accounts[0],
-              // smartContract: SmartContractObj,
+              smartContract: SmartContractObj,
               web3: web3,
             })
           );

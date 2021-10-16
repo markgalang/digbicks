@@ -4,6 +4,7 @@ import NumericInput from "react-numeric-input";
 import { useSelector, useDispatch } from "react-redux";
 import { setMintCount } from "redux/actions";
 import moment from "moment";
+import { DIGBICK_MINT_COST } from "../../util/enums";
 
 export default function Minter() {
   const isSmallScreen = window.innerWidth < 600;
@@ -12,6 +13,9 @@ export default function Minter() {
   const { wallet, minter } = useSelector((state) => state);
   const blockchain = useSelector((state) => state.blockchain);
   const [timer, setTimer] = useState("");
+  const [isMinting, setIsMinting] = useState(false);
+  const [response, setResponse] = useState("Start Minting");
+
   const preSaleDate = new Date("Sun Oct 31 2021 08:00:00 GMT+0800"); //October 30, 2021, 8am ph time
 
   const _handleChange = (newValue) => {
@@ -28,7 +32,26 @@ export default function Minter() {
   };
 
   const _handleMintClick = () => {
-    alert("Cumming Soon.");
+    setIsMinting(true);
+
+    const mintTotalCost = DIGBICK_MINT_COST * minter.mintCount;
+
+    blockchain.smartContract.methods
+      .mint(blockchain.account, minter.mintCount)
+      .send({
+        from: blockchain.account,
+        value: blockchain.web3.utils.toWei(mintTotalCost?.toString(), "ether"),
+      })
+      .once("error", (err) => {
+        setIsMinting(false);
+        setResponse(err);
+        console.log(err);
+      })
+      .then((receipt) => {
+        setIsMinting(false);
+        setResponse(receipt);
+        console.log(receipt);
+      });
   };
 
   const displayTimer = () => {
@@ -94,9 +117,9 @@ export default function Minter() {
         <button
           className="mintBtn"
           onClick={_handleMintClick}
-          disabled={blockchain?.loading}
+          disabled={blockchain?.loading || isMinting}
         >
-          Mint Now{" "}
+          {isMinting ? "Minting... " : "Mint Now"}
         </button>
       </div>
 
