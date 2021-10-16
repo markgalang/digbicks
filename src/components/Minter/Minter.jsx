@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { setMintCount } from "redux/actions";
 import moment from "moment";
 import { DIGBICK_MINT_COST } from "../../util/enums";
+import Spinner from "react-bootstrap/Spinner";
 
 export default function Minter() {
   const isSmallScreen = window.innerWidth < 600;
@@ -46,11 +47,12 @@ export default function Minter() {
         setIsMinting(false);
         setResponse(err);
         console.log(err);
+        alert(err.message);
       })
       .then((receipt) => {
         setIsMinting(false);
         setResponse(receipt);
-        console.log(receipt);
+        alert(receipt);
       });
   };
 
@@ -119,7 +121,11 @@ export default function Minter() {
           onClick={_handleMintClick}
           disabled={blockchain?.loading || isMinting}
         >
-          {isMinting ? "Minting... " : "Mint Now"}
+          {isMinting ? (
+            <Spinner animation="border" variant="light" size="sm" />
+          ) : (
+            "Mint Now"
+          )}
         </button>
       </div>
 

@@ -3,6 +3,7 @@ import Web3 from "web3";
 import {
   DIGBICKS_CONTRACT_ADDRESS,
   DIGBICKS_CONTRACT_ABI,
+  ETH_NETWORK_ID,
 } from "../../util/enums";
 // import SmartContract from "../../contracts/SmartContract.json";
 // log
@@ -48,7 +49,7 @@ export const handleWalletConnect = () => {
           method: "net_version",
         });
         // const NetworkData = await SmartContract.networks[networkId];
-        if (networkId.toString() === "4") {
+        if (networkId.toString() === ETH_NETWORK_ID) {
           const SmartContractObj = new web3.eth.Contract(
             DIGBICKS_CONTRACT_ABI,
             DIGBICKS_CONTRACT_ADDRESS

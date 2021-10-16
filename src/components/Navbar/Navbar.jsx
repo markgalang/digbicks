@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 // Bootstrap
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import Spinner from "react-bootstrap/Spinner";
 
 // Image
 import DigBicksLogo from "assets/images/logo.png";
@@ -17,6 +18,7 @@ const NavbarComponent = (props) => {
   const blockchain = useSelector((state) => state.blockchain);
   const isWalletConnected = blockchain?.account;
   const dispatch = useDispatch();
+  const isLoading = blockchain?.loading;
 
   useEffect(() => {
     const scrollCallBack = () => {
@@ -30,6 +32,16 @@ const NavbarComponent = (props) => {
     };
     // eslint-disable-next-line
   }, []);
+
+  const _getConnectButtonText = () => {
+    if (isLoading) {
+      return <Spinner animation="border" variant="light" size="sm" />;
+    } else if (isWalletConnected) {
+      return userAccountId;
+    } else {
+      return "Connect";
+    }
+  };
 
   const toggleCollapsibleMenu = () => {
     setIsExpanded((prevState) => !prevState);
@@ -108,7 +120,7 @@ const NavbarComponent = (props) => {
               className="connectButton"
               onClick={() => dispatch(handleWalletConnect())}
             >
-              {isWalletConnected ? userAccountId : "Connect"}
+              {_getConnectButtonText()}
             </button>
           </div>
         </Navbar.Collapse>

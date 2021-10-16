@@ -49,6 +49,11 @@
   text-decoration: underline;
 }
 
+.mintBtn div {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
 .minterInputContainer {
   display: flex;
 }
