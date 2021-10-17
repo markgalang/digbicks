@@ -2,12 +2,12 @@ import React from "react";
 import Modal from "react-bootstrap/Modal";
 import { useSelector, useDispatch } from "react-redux";
 import { hideModal } from "redux/actions";
-import { MESSAGE_TYPE, OPENSEA_ACCOUNT_PAGE } from "util/enums";
+import { OPENSEA_ACCOUNT_PAGE } from "util/enums";
 import "./CustomModal.css";
 import { X } from "react-feather";
 
 function CustomModal() {
-  const { isModalOpen, type, message } = useSelector((state) => state.modal);
+  const { isModalOpen } = useSelector((state) => state.modal);
   const dispatch = useDispatch();
 
   const _handleClose = () => {

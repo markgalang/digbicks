@@ -33,10 +33,11 @@ export default function Minter() {
 
   useEffect(() => {
     _getAvailableBicks();
+    // eslint-disable-next-line
   }, [blockchain?.smartContract]);
 
-  // const preSaleDate = new Date("Sun Oct 17 2021 18:48:00 GMT+0800"); //October 30, 2021, 8am ph time
-  const preSaleDate = new Date("Sun Oct 31 2021 08:00:00 GMT+0800"); //October 30, 2021, 8am ph time
+  const preSaleDate = new Date("Sun Oct 17 2021 20:10:00 GMT+0800"); //October 30, 2021, 8am ph time
+  // const preSaleDate = new Date("Sun Oct 31 2021 08:00:00 GMT+0800"); //October 30, 2021, 8am ph time
 
   const _getAvailableBicks = async () => {
     if (blockchain?.smartContract) {

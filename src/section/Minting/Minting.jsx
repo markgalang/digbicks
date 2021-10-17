@@ -1,7 +1,6 @@
 import React from "react";
 import "./Minting.css";
 import Minter from "components/Minter/Minter";
-import MintedPlaceholder from "assets/images/mintedPlaceholder.svg";
 import CollectionImagesContainer from "components/CollectionImages/CollectionImages";
 
 export default function Minting() {
