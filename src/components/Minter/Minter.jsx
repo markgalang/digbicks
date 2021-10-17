@@ -19,11 +19,45 @@ export default function Minter() {
   const dispatch = useDispatch();
   const { wallet, minter } = useSelector((state) => state);
   const blockchain = useSelector((state) => state.blockchain);
-  const [timer, setTimer] = useState("");
+  const [timer, setTimer] = useState(0);
   const [isMinting, setIsMinting] = useState(false);
+  const [isLoadingLocally, setIsLoadingLocally] = useState(true);
+  const [totalSupply, setTotalSupply] = useState(0);
+  const [maxSupply, setMaxSupply] = useState(0);
   const isWalletConnected = blockchain?.account;
+  const isMintValueValid = totalSupply + minter.mintCount <= maxSupply;
+  const isMintDateValid = timer <= 0;
 
+  const isMintingAllowed =
+    !blockchain?.loading && !isMinting && isMintValueValid && isMintDateValid;
+
+  useEffect(() => {
+    _getAvailableBicks();
+  }, [blockchain?.smartContract]);
+
+  // const preSaleDate = new Date("Sun Oct 17 2021 18:48:00 GMT+0800"); //October 30, 2021, 8am ph time
   const preSaleDate = new Date("Sun Oct 31 2021 08:00:00 GMT+0800"); //October 30, 2021, 8am ph time
+
+  const _getAvailableBicks = async () => {
+    if (blockchain?.smartContract) {
+      setIsLoadingLocally(true);
+      await blockchain?.smartContract.methods
+        .totalSupply()
+        .call()
+        .then((returnedTotalSupply) => {
+          setTotalSupply(Number(returnedTotalSupply));
+        });
+
+      await blockchain?.smartContract.methods
+        .maxSupply()
+        .call()
+        .then((returnedMaxSupply) => {
+          setMaxSupply(Number(returnedMaxSupply));
+        });
+
+      setIsLoadingLocally(false);
+    }
+  };
 
   const _handleChange = (newValue) => {
     let newCount = 1;
@@ -39,7 +73,24 @@ export default function Minter() {
   };
 
   const _handleMintClick = () => {
-    if (blockchain?.loading || isMinting) return;
+    if (!isMintValueValid) {
+      dispatch(
+        showAlert({
+          type: MESSAGE_TYPE.ERROR,
+          message: "Not enough DigBicks NFT to mint.",
+        })
+      );
+    }
+
+    if (!isMintingAllowed) {
+      dispatch(
+        showAlert({
+          type: MESSAGE_TYPE.ERROR,
+          message: "Minting is not allowed.",
+        })
+      );
+      return;
+    }
 
     if (!isWalletConnected) {
       dispatch(handleWalletConnect());
@@ -70,6 +121,7 @@ export default function Minter() {
       })
       .then((receipt) => {
         setIsMinting(false);
+        _getAvailableBicks();
         dispatch(
           showModal({
             type: MESSAGE_TYPE.SUCCESS,
@@ -84,7 +136,7 @@ export default function Minter() {
     const countdownTimer = moment(preSaleDate).diff(moment(currentDateTime));
     if (countdownTimer <= 0) {
       clearInterval(1);
-      return setTimer("0d: 0h: 0m: 0s");
+      return setTimer(0);
     }
     const duration = moment.duration(countdownTimer);
 
@@ -120,8 +172,18 @@ export default function Minter() {
       </p>
 
       <div className="countdownContainer">
-        <p>Minting will start in:</p>
-        <h2 className="countdowntext">{timer}</h2>
+        {isLoadingLocally ? (
+          <Spinner animation="border" size="lg" />
+        ) : (
+          <>
+            <p>
+              {isMintDateValid ? "Available Bicks:" : "Minting will start in:"}
+            </p>
+            <h2 className="countdowntext">
+              {isMintDateValid ? `${maxSupply - totalSupply}` : timer}
+            </h2>
+          </>
+        )}
       </div>
 
       <div className="minterInputContainer">
@@ -140,9 +202,9 @@ export default function Minter() {
           />
         </div>
         <button
-          className="mintBtn"
+          className={`mintBtn ${!isMintingAllowed && "disabledMintingBtn"}`}
           onClick={_handleMintClick}
-          disabled={blockchain?.loading || isMinting}
+          disabled={!isMintingAllowed}
         >
           {isMinting ? (
             <Spinner animation="border" variant="light" size="sm" />

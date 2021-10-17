@@ -45,6 +45,10 @@
   cursor: pointer;
 }
 
+.disabledMintingBtn {
+  cursor: not-allowed !important;
+}
+
 .mintBtn:hover {
   text-decoration: underline;
 }
@@ -80,6 +84,10 @@
   padding: 0;
   padding-left: 0.75rem !important;
   outline: none !important;
+}
+
+.mintSupplySpinner {
+  border: 2px solid red;
 }
 
 .pricePreview {
