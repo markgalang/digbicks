@@ -36,7 +36,7 @@ export default function Minter() {
     // eslint-disable-next-line
   }, [blockchain?.smartContract]);
 
-  const preSaleDate = new Date("Sun Oct 17 2021 20:10:00 GMT+0800"); //October 30, 2021, 8am ph time
+  const preSaleDate = new Date("Sun Oct 17 2021 22:00:00 GMT+0800"); //October 30, 2021, 8am ph time
   // const preSaleDate = new Date("Sun Oct 31 2021 08:00:00 GMT+0800"); //October 30, 2021, 8am ph time
 
   const _getAvailableBicks = async () => {
@@ -78,7 +78,7 @@ export default function Minter() {
     if (!isMintDateValid) {
       dispatch(
         showAlert({
-          type: MESSAGE_TYPE.INFO,
+          type: MESSAGE_TYPE.PRIMARY,
           message: "CUMMING SOON.",
         })
       );
@@ -188,11 +188,9 @@ export default function Minter() {
           <Spinner animation="border" size="lg" />
         ) : (
           <>
-            <p>
-              {isMintDateValid ? "Available Bicks:" : "Minting will start in:"}
-            </p>
+            <p>{isMintDateValid ? "Minted:" : "Minting will start in:"}</p>
             <h2 className="countdowntext">
-              {isMintDateValid ? `${maxSupply - totalSupply}` : timer}
+              {isMintDateValid ? `${totalSupply} / ${maxSupply}` : timer}
             </h2>
           </>
         )}

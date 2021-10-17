@@ -390,7 +390,7 @@ export const MESSAGE_TYPE = {
   WARNING: "warning",
   ERROR: "danger",
   SUCCESS: "success",
-  INFO: "info",
+  PRIMARY: "primary",
 };
 
 export const ERROR_MESSAGE = {

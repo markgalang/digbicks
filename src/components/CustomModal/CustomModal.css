@@ -5,51 +5,82 @@ body .modal-content {
   width: 100%;
 }
 body .modal-dialog {
-  max-width: 700px;
+  max-width: 900px;
   width: 100%;
 }
 
 body .customModalBody {
-  border: 0.75rem solid #da3137;
   border-radius: 1rem;
   position: relative;
-  padding: 3rem;
-  background-color: #ffa8aa;
+  background-color: #ffe1e8;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  overflow: hidden;
+  padding: 0;
+}
+
+.textMessageContainer {
+  padding: 3rem;
+  position: relative;
+  background-color: #ffe1e8;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.imageContainer {
+  display: block;
+  width: 70%;
+  background: radial-gradient(
+    66.68% 65.65% at 50% 50%,
+    #e6e7e8 0.7%,
+    #ff4571 39.83%,
+    #fb406b 51%,
+    #f03359 66.27%,
+    #dd1c3d 83.84%,
+    #d4112e 91.36%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.condomImg {
+  width: 13rem;
 }
 
 .modalCloseBtn {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  color: #fff;
+  color: #ca413f;
   cursor: pointer;
 }
 
 .modalTitle {
-  color: #da3138;
-  font-size: 4rem;
+  color: #ca413f;
+  font-size: 3.5rem;
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 1px;
+  margin: 2rem 0;
 }
 
 .modalDescription {
   text-align: center;
-  color: #fff;
+  color: #000;
+  letter-spacing: 1px;
 }
 
 .modalLink {
   font-weight: 700;
-  color: #fff;
+  font-size: 1.3rem;
+  color: #000;
 }
 
 .modalButton {
   color: #fff;
-  background: #da3138;
-  border: 3px solid #bf0910;
+  background: #ca413f;
+  border: 3px solid #b12921;
   border-radius: 0.5rem;
   padding: 0.8rem 1.25rem;
   font-size: 0.8rem;
@@ -71,5 +102,9 @@ body .customModalBody {
 
   body .customModalBody {
     padding: 3rem 1;
+  }
+
+  .imageContainer {
+    display: none;
   }
 }
