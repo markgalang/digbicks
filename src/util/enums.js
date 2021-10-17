@@ -9,7 +9,7 @@ export const OPENSEA_ACCOUNT_PAGE = "https://testnets.opensea.io/account"; // Fo
 export const DIGBICK_MINT_COST = 0.069;
 
 export const DIGBICKS_CONTRACT_ADDRESS =
-  "0xF1c3E9564EF6ebF1186e5668019FD90A1da92230";
+  "0xE1b4957049Ac6c69daF05B1FBcE15e8B448c7850";
 
 export const DIGBICKS_CONTRACT_ABI = [
   {
