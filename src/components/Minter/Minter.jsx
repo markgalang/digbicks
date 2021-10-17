@@ -29,7 +29,7 @@ export default function Minter() {
   const isMintDateValid = timer <= 0;
 
   const isMintingAllowed =
-    !blockchain?.loading && !isMinting && isMintValueValid && isMintDateValid;
+    !blockchain?.loading && !isMinting && isMintValueValid;
 
   useEffect(() => {
     _getAvailableBicks();
@@ -57,6 +57,7 @@ export default function Minter() {
 
       setIsLoadingLocally(false);
     }
+    setIsLoadingLocally(false);
   };
 
   const _handleChange = (newValue) => {
@@ -73,6 +74,16 @@ export default function Minter() {
   };
 
   const _handleMintClick = () => {
+    if (!isMintDateValid) {
+      dispatch(
+        showAlert({
+          type: MESSAGE_TYPE.INFO,
+          message: "CUMMING SOON.",
+        })
+      );
+      return;
+    }
+
     if (!isMintValueValid) {
       dispatch(
         showAlert({
