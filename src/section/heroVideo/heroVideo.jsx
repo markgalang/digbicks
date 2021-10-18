@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import CummingSoon from "assets/videos/cumming-soon.mp4";
 import "./heroVideo.css";
-import DigBicks from "assets/images/logo.png";
+// import DigBicks from "assets/images/logo.png";
 import { Volume2, VolumeX, PlayCircle } from "react-feather";
 
 function HeroVideo() {

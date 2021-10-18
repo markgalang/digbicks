@@ -1,8 +1,13 @@
 // constants
 import Web3 from "web3";
-// import SmartContract from "../../contracts/SmartContract.json";
-// log
-// import { fetchData } from "../data/dataActions";
+import {
+  DIGBICKS_CONTRACT_ADDRESS,
+  DIGBICKS_CONTRACT_ABI,
+  ETH_NETWORK_ID,
+  ERROR_MESSAGE,
+  MESSAGE_TYPE,
+} from "../../util/enums";
+import { showAlert } from "./modalActions";
 
 const connectRequest = () => {
   return {
@@ -43,16 +48,16 @@ export const handleWalletConnect = () => {
         const networkId = await window.ethereum.request({
           method: "net_version",
         });
-        // const NetworkData = await SmartContract.networks[networkId];
-        if (networkId.toString() === "1") {
-          // const SmartContractObj = new web3.eth.Contract(
-          //   SmartContract.abi,
-          //   NetworkData.address
-          // );
+
+        if (networkId.toString() === ETH_NETWORK_ID) {
+          const SmartContractObj = new web3.eth.Contract(
+            DIGBICKS_CONTRACT_ABI,
+            DIGBICKS_CONTRACT_ADDRESS
+          );
           dispatch(
             connectSuccess({
               account: accounts[0],
-              // smartContract: SmartContractObj,
+              smartContract: SmartContractObj,
               web3: web3,
             })
           );
@@ -65,17 +70,31 @@ export const handleWalletConnect = () => {
           });
           // Add listeners end
         } else {
-          dispatch(connectFailed("Pleace Change network to ETH network."));
+          dispatch(connectFailed("Please change network to ETH network."));
+          dispatch(
+            showAlert({
+              type: MESSAGE_TYPE.ERROR,
+              message: "Please change network to ETH network.",
+            })
+          );
         }
       } catch (err) {
+        dispatch(connectFailed(ERROR_MESSAGE.DEFAULT));
         dispatch(
-          connectFailed(
-            "Something went wrong. Transaction failed. Please try again."
-          )
+          showAlert({
+            type: MESSAGE_TYPE.ERROR,
+            message: ERROR_MESSAGE.DEFAULT,
+          })
         );
       }
     } else {
       dispatch(connectFailed("Please Install Metamask to connect."));
+      dispatch(
+        showAlert({
+          type: MESSAGE_TYPE.WARNING,
+          message: "Please Install Metamask to connect.",
+        })
+      );
     }
   };
 };
@@ -83,6 +102,5 @@ export const handleWalletConnect = () => {
 export const updateAccount = (account) => {
   return async (dispatch) => {
     dispatch(updateAccountRequest({ account: account }));
-    // dispatch(fetchData(account));
   };
 };

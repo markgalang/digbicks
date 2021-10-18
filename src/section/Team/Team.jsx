@@ -5,7 +5,6 @@ import SG from "assets/images/SG.png";
 import AT from "assets/images/AT.png";
 import Marso from "assets/images/Marso.png";
 import EJ from "assets/images/EJ.png";
-import JM from "assets/images/JM.png";
 import MT from "assets/images/MT.png";
 import MG from "assets/images/MG.png";
 import { FaDiscord, FaTwitter } from "react-icons/fa";
@@ -122,7 +121,11 @@ function Team() {
           {member?.icons && <div className="memberHorizontalLine" />}
           {member?.icons || null}
         </div>
-        <img className="teamMemberImage" src={member.image} />
+        <img
+          className="teamMemberImage"
+          src={member.image}
+          alt={member?.name}
+        />
       </div>
     );
   });
@@ -159,7 +162,7 @@ function Team() {
               </a>
             </div>
           </div>
-          <img className="teamMemberImage" src={BickFather} />
+          <img className="teamMemberImage" src={BickFather} alt="BickFather" />
         </div>
         <div className="teamMembersContainer">{membersMarkup}</div>
       </div>

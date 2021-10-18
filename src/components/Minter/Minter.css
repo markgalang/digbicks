@@ -45,8 +45,17 @@
   cursor: pointer;
 }
 
+.disabledMintingBtn {
+  cursor: not-allowed !important;
+}
+
 .mintBtn:hover {
   text-decoration: underline;
+}
+
+.mintBtn div {
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .minterInputContainer {
@@ -75,6 +84,10 @@
   padding: 0;
   padding-left: 0.75rem !important;
   outline: none !important;
+}
+
+.mintSupplySpinner {
+  border: 2px solid red;
 }
 
 .pricePreview {

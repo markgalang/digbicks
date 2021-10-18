@@ -4,3 +4,9 @@ export const SET_MINTER_LOADER = "SET_MINTER_LOADER";
 export const SET_ETH_PRICE = "SET_ETH_PRICE";
 export const SET_WALLET_CONNECTIVITY = "SET_WALLET_CONNECTIVITY";
 export const SET_WALLET_LOADER = "SET_WALLET_LOADER";
+
+export const OPEN_MODAL = "OPEN_MODAL";
+export const CLOSE_MODAL = "CLOSE_MODAL";
+
+export const OPEN_ALERT = "OPEN_ALERT";
+export const CLOSE_ALERT = "CLOSE_ALERT";

@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Footer from "components/Footer/Footer";
-import Collection from "section/Collection/Collection";
+import CustomModal from "components/CustomModal/CustomModal";
+import AlertMessage from "components/AlertMessage/AlertMessage";
 import HeroVideo from "section/heroVideo/heroVideo";
 import Minting from "section/Minting/Minting";
 import Roadmap from "section/Roadmap/Roadmap";
@@ -16,7 +17,7 @@ function Home() {
 
   useEffect(() => {
     dispatch(handleWalletConnect());
-  }, []);
+  }, [dispatch]);
 
   useEffect(() => {
     if (blockchain.errorMsg) {
@@ -25,7 +26,9 @@ function Home() {
   }, [blockchain.errorMsg]);
 
   return (
-    <div>
+    <div style={{ position: "relative" }}>
+      <CustomModal />
+      <AlertMessage />
       <NavbarComponent />
       <HeroVideo />
       <Minting />

@@ -6,9 +6,7 @@ import CollectionImage from "components/CollectionImage/CollectionImage";
 
 import BickFather from "assets/bicks/bick-father.jpg";
 import SupremeLeader from "assets/bicks/supreme-leader.jpg";
-import BobMarley from "assets/bicks/bob.jpg";
 import Trump from "assets/bicks/trump.jpg";
-import Pope from "assets/bicks/pope.png";
 import MichealJackson from "assets/bicks/michael-jackson.jpg";
 
 export default function Collectionimages(props) {
