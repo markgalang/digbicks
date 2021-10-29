@@ -13,8 +13,7 @@ export default (state = [], action) => {
           <p>
             DigBicks is a collection of 6969 unique NFTs in the Ethereum
             blockchain. Each DigBick has its distinct personality defined by
-            carefully curated attributes such as headgears, mouth accessories,
-            weapons, and more.{" "}
+            carefully curated attributes such as headgears, weapons, and more.{" "}
           </p>
         </div>
       ),
@@ -61,15 +60,14 @@ export default (state = [], action) => {
       title: <strong>How can I view my DigBicks after minting?</strong>,
       content: (
         <p>
-          Your DigBicks will appear in whatever address, or connected wallet you
-          used to purchase it. You can also see it on{" "}
+          Wanna see how BIG is your D? You can see it on your{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://opensea.io/"
           >
             {" "}
-            OpenSea.
+            OpenSea Account.
           </a>
         </p>
       ),
@@ -78,8 +76,7 @@ export default (state = [], action) => {
       title: <strong>What can I do with my DigBick NFT?</strong>,
       content: (
         <p>
-          Once you have a DigBicks,you will have this greater power and it's
-          yours to use in any purposes.
+          Don't have to think HARD! You can do whatever you want with it.
           <a
             target="_blank"
             rel="noopener noreferrer"
