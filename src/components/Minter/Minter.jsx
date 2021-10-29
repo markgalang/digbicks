@@ -36,8 +36,8 @@ export default function Minter() {
     // eslint-disable-next-line
   }, [blockchain?.smartContract]);
 
-  // const preSaleDate = new Date("Sun Oct 18 2021 00:00:00 GMT+0800"); //October 30, 2021, 8am ph time
-  const preSaleDate = new Date("Sun Oct 31 2021 08:00:00 GMT+0800"); //October 30, 2021, 8am ph time
+  // const preSaleDate = new Date("Sun Oct 23 2021 11:36:00 GMT+0800"); //October 30, 2021, 8am ph time
+  const preSaleDate = new Date("Sun Oct 30 2021 08:00:00 GMT+0800"); //October 30, 2021, 8am ph time
 
   const _getAvailableBicks = async () => {
     if (blockchain?.smartContract) {
@@ -179,8 +179,8 @@ export default function Minter() {
         <strong>DIGBICKS</strong> is a collection of <strong>6969</strong>{" "}
         unique NFTs in the Ethereum blockchain. Each DigBick has its distinct
         personality defined by carefully curated attributes such as headgears,
-        mouth accessories, weapons, and more. They are all fun and quirky, but
-        you’d be more surprised by the rare ones!
+        weapons, and more. They are all fun and quirky, but you’d be more
+        surprised by the rare ones!
       </p>
 
       <div className="countdownContainer">
