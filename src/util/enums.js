@@ -1,10 +1,10 @@
-export const ETH_NETWORK_ID = "4"; //Rinkeby Network ID (test network)
+// export const ETH_NETWORK_ID = "4"; //Rinkeby Network ID (test network)
 
-// export const ETH_NETWORK_ID = "1"; //ETH Network ID
+export const ETH_NETWORK_ID = "1"; //ETH Network ID
 
-export const OPENSEA_ACCOUNT_PAGE = "https://testnets.opensea.io/account"; // For Development only
+// export const OPENSEA_ACCOUNT_PAGE = "https://testnets.opensea.io/account"; // For Development only
 
-// export const OPENSEA_ACCOUNT_PAGE = "https://opensea.io/account"; // For Production only
+export const OPENSEA_ACCOUNT_PAGE = "https://opensea.io/account"; // For Production only
 
 export const DIGBICK_MINT_COST = 0.069;
 

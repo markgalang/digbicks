@@ -19,11 +19,11 @@ function Home() {
     dispatch(handleWalletConnect());
   }, [dispatch]);
 
-  useEffect(() => {
-    if (blockchain.errorMsg) {
-      alert(blockchain.errorMsg);
-    }
-  }, [blockchain.errorMsg]);
+  // useEffect(() => {
+  //   if (blockchain.errorMsg) {
+  //     alert(blockchain.errorMsg);
+  //   }
+  // }, [blockchain.errorMsg]);
 
   return (
     <div style={{ position: "relative" }}>
