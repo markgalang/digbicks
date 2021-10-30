@@ -91,6 +91,29 @@ body .nav-link {
   color: #000 !important;
 }
 
+.openSeaButtonImage {
+  width: 70%;
+}
+
+.openSeaButton {
+  cursor: pointer;
+  padding: 0.8rem 0.5rem;
+  background-color: #2081e2;
+  border-radius: 0.5rem;
+  border-bottom: none;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: all 0.3s;
+  color: #fff;
+  letter-spacing: 1px;
+  margin: 0 0.5rem;
+  max-width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.2rem;
+}
+
 .discordButton {
   cursor: pointer;
   padding: 1rem 2rem;
@@ -103,6 +126,7 @@ body .nav-link {
   color: #fff;
   letter-spacing: 1px;
   margin: 0 0.5rem;
+  height: 3.2rem;
 }
 
 .discordButton:hover {

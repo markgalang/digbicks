@@ -10,6 +10,7 @@ import Spinner from "react-bootstrap/Spinner";
 
 // Image
 import DigBicksLogo from "assets/images/logo.png";
+import OpenSeaLogo from "assets/images/OpenSeaLogo.svg";
 import { handleWalletConnect } from "redux/actions";
 
 const NavbarComponent = (props) => {
@@ -109,6 +110,19 @@ const NavbarComponent = (props) => {
               className="nav-social-link"
             >
               <FaTwitter className="social-icon" />
+            </a>
+
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://opensea.io/collection/digbicks"
+              className="openSeaButton"
+            >
+              <img
+                src={OpenSeaLogo}
+                alt="OpenSeaLogo"
+                className="openSeaButtonImage"
+              />
             </a>
 
             <a

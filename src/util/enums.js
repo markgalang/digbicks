@@ -9,7 +9,7 @@ export const OPENSEA_ACCOUNT_PAGE = "https://opensea.io/account"; // For Product
 export const DIGBICK_MINT_COST = 0.069;
 
 export const DIGBICKS_CONTRACT_ADDRESS =
-  "0x754A78972043a4A6920F9E904E3478E77B27A114";
+  "0x2587FA21554644f999f8f942d183Cea9c0F45b82";
 
 export const DIGBICKS_CONTRACT_ABI = [
   {
@@ -175,15 +175,6 @@ export const DIGBICKS_CONTRACT_ABI = [
       { internalType: "uint256", name: "_mintAmount", type: "uint256" },
     ],
     name: "mint",
-    outputs: [],
-    stateMutability: "payable",
-    type: "function",
-  },
-  {
-    inputs: [
-      { internalType: "uint256", name: "_mintCountByOwner", type: "uint256" },
-    ],
-    name: "mintByOwner",
     outputs: [],
     stateMutability: "payable",
     type: "function",

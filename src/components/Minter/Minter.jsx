@@ -21,21 +21,21 @@ export default function Minter() {
   const blockchain = useSelector((state) => state.blockchain);
   const [timer, setTimer] = useState(0);
   const [isMinting, setIsMinting] = useState(false);
-  const [isLoadingLocally, setIsLoadingLocally] = useState(false);
+  const [isLoadingLocally, setIsLoadingLocally] = useState(true);
   const [totalSupply, setTotalSupply] = useState(0);
   const [maxSupply, setMaxSupply] = useState(0);
   const isWalletConnected = blockchain?.account;
   const isMintValueValid = totalSupply + minter.mintCount <= maxSupply;
-  // const isMintDateValid = timer <= 0;
-  const isMintDateValid = false;
+  const isMintDateValid = timer <= 0;
+  // const isMintDateValid = false;
 
   const isMintingAllowed =
     !blockchain?.loading && !isMinting && isMintValueValid;
 
-  // useEffect(() => {
-  //   _getAvailableBicks();
-  //   // eslint-disable-next-line
-  // }, [blockchain?.smartContract]);
+  useEffect(() => {
+    _getAvailableBicks();
+    // eslint-disable-next-line
+  }, [blockchain?.smartContract]);
 
   // const preSaleDate = new Date("Sun Oct 23 2021 11:36:00 GMT+0800"); //October 30, 2021, 8am ph time
   const preSaleDate = new Date("Sun Oct 30 2021 08:00:00 GMT+0800"); //October 30, 2021, 8am ph time
@@ -66,9 +66,9 @@ export default function Minter() {
     let newCount = 1;
     const isInteger = parseInt(newValue);
     if (!isInteger) return;
-    if (newValue > 5) {
-      newCount = 5;
-    } else if (newValue >= 1 && newValue <= 5) {
+    if (newValue > 10) {
+      newCount = 10;
+    } else if (newValue >= 1 && newValue <= 10) {
       newCount = newValue;
     }
 
@@ -181,7 +181,15 @@ export default function Minter() {
         unique NFTs in the Ethereum blockchain. Each DigBick has its distinct
         personality defined by carefully curated attributes such as headgears,
         weapons, and more. They are all fun and quirky, but you’d be more
-        surprised by the rare ones!
+        surprised by the rare ones! You can see more of our collection on{" "}
+        <a
+          href={"https://opensea.io/collection/digbicks"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          OpenSea
+        </a>
+        .
       </p>
 
       <div className="countdownContainer">
@@ -204,7 +212,7 @@ export default function Minter() {
           </div>
           <NumericInput
             min={1}
-            max={5}
+            max={10}
             value={minter.mintCount}
             mobile={isSmallScreen}
             className="minterCounter"
