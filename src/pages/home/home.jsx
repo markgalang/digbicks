@@ -32,9 +32,9 @@ function Home() {
       <NavbarComponent />
       <HeroVideo />
       <Minting />
-      <Roadmap />
-      <FAQ />
-      <Team />
+      {/* <Roadmap /> */}
+      {/* <FAQ /> */}
+      {/* <Team /> */}
       <Footer />
     </div>
   );

@@ -6,7 +6,7 @@ export const ETH_NETWORK_ID = "1"; //ETH Network ID
 
 export const OPENSEA_ACCOUNT_PAGE = "https://opensea.io/account"; // For Production only
 
-export const DIGBICK_MINT_COST = 0.069;
+export const DIGBICK_MINT_COST = 0;
 
 export const DIGBICKS_CONTRACT_ADDRESS =
   "0x2587FA21554644f999f8f942d183Cea9c0F45b82";

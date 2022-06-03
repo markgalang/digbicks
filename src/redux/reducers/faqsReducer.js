@@ -49,12 +49,12 @@ export default (state = [], action) => {
     },
     {
       title: <strong>How much does it cost to build a DigBicks Army?</strong>,
-      content: "The minting fee for each DigBicks is 0.069 ETH.",
+      content: "The minting fee for each DigBicks is free.",
     },
     {
       title: <strong>How many DigBicks can I mint at a time?</strong>,
       content:
-        "We know how badly you want them, but we are limiting the minting to 10 DigBicks per transaction. Afterall, everybody deserves the D!",
+        "We know how badly you want them, but we are limiting the minting to 5 DigBicks per transaction. Afterall, everybody deserves the D!",
     },
     {
       title: <strong>How can I view my DigBicks after minting?</strong>,

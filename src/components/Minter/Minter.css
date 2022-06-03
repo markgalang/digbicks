@@ -10,6 +10,7 @@
   font-family: "Inter", sans-serif;
   align-items: center;
   text-align: center;
+  margin: 0.5rem;
 }
 
 .mintTitle {
@@ -157,6 +158,10 @@
     text-align: left;
     margin: 2rem 0;
     line-height: 1.5;
+  }
+
+  .minterContainer {
+    margin: 0;
   }
 }
 

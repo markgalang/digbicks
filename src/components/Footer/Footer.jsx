@@ -15,19 +15,19 @@ function Footer() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://twitter.com/DigBickNFT"
+          href="https://twitter.com/DigBicksIO"
           className="social-link"
         >
           <FaTwitter className="social-icon" />
         </a>
-        <a
+        {/*<a
           target="_blank"
           rel="noopener noreferrer"
           href="https://discord.gg/MPBfmRyjDT"
           className="social-link"
         >
           <FaDiscord className="social-icon" />
-        </a>
+        </a>*/}
       </div>
 
       <p>

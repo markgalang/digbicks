@@ -66,9 +66,9 @@ export default function Minter() {
     let newCount = 1;
     const isInteger = parseInt(newValue);
     if (!isInteger) return;
-    if (newValue > 10) {
-      newCount = 10;
-    } else if (newValue >= 1 && newValue <= 10) {
+    if (newValue > 5) {
+      newCount = 5;
+    } else if (newValue >= 1 && newValue <= 5) {
       newCount = newValue;
     }
 
@@ -212,7 +212,7 @@ export default function Minter() {
           </div>
           <NumericInput
             min={1}
-            max={10}
+            max={5}
             value={minter.mintCount}
             mobile={isSmallScreen}
             className="minterCounter"
@@ -233,9 +233,15 @@ export default function Minter() {
         </button>
       </div>
 
-      <p className="pricePreview">{`Final Price: ${(
+      {/* <p className="pricePreview">{`Final Price: ${(
         wallet.ethPrice * minter.mintCount
-      ).toFixed(3)} ETH`}</p>
+      ).toFixed(3)} ETH`}</p> */}
+      <p className="pricePreview">
+        Final Price:{" "}
+        <strong>
+          <i>FREE Mint</i>
+        </strong>{" "}
+      </p>
     </div>
   );
 }

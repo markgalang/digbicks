@@ -92,7 +92,7 @@ const NavbarComponent = (props) => {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <div className="navbar-menus">
-            <NavDropdown
+            {/* <NavDropdown
               title="Home"
               id="basic-nav-dropdown"
               className="dropdownText"
@@ -101,18 +101,18 @@ const NavbarComponent = (props) => {
               <NavDropdown.Item href="#roadmap">Roadmap</NavDropdown.Item>
               <NavDropdown.Item href="#faqs">FAQs</NavDropdown.Item>
               <NavDropdown.Item href="#team">Team</NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
 
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://twitter.com/DigBickNFT"
+              href="https://twitter.com/DigBicksIO"
               className="nav-social-link"
             >
               <FaTwitter className="social-icon" />
             </a>
 
-            <a
+            {/* <a
               target="_blank"
               rel="noopener noreferrer"
               href="https://opensea.io/collection/digbicks"
@@ -123,9 +123,9 @@ const NavbarComponent = (props) => {
                 alt="OpenSeaLogo"
                 className="openSeaButtonImage"
               />
-            </a>
+            </a> */}
 
-            <a
+            {/* <a
               href="https://discord.gg/MPBfmRyjDT"
               rel="noreferrer"
               target="_blank"
@@ -133,7 +133,7 @@ const NavbarComponent = (props) => {
               onClick={closeCollapsibleMenu}
             >
               Join our Discord
-            </a>
+            </a> */}
 
             <button className="connectButton" onClick={_handleClick}>
               {_getConnectButtonText()}

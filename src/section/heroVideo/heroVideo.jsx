@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import CummingSoon from "assets/videos/cumming-soon.mp4";
+import DigBicks from "assets/videos/digbicks.mp4";
 import "./heroVideo.css";
 // import DigBicks from "assets/images/logo.png";
 import { Volume2, VolumeX, PlayCircle } from "react-feather";
@@ -9,7 +10,7 @@ function HeroVideo() {
   return (
     <div className="heroVideoContainer">
       <video autoPlay muted={isMuted} loop className="videoContainer">
-        <source src={CummingSoon} type="video/mp4" />
+        <source src={DigBicks} type="video/mp4" />
       </video>
 
       {/* <div className="logoContainer">
