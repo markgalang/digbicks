@@ -112,10 +112,10 @@ const NavbarComponent = (props) => {
               <FaTwitter className="social-icon" />
             </a>
 
-            {/* <a
+            <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://opensea.io/collection/digbicks"
+              href="https://opensea.io/collection/digbicksadventure"
               className="openSeaButton"
             >
               <img
@@ -123,7 +123,7 @@ const NavbarComponent = (props) => {
                 alt="OpenSeaLogo"
                 className="openSeaButtonImage"
               />
-            </a> */}
+            </a>
 
             {/* <a
               href="https://discord.gg/MPBfmRyjDT"

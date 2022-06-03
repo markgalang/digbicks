@@ -66,9 +66,9 @@ export default function Minter() {
     let newCount = 1;
     const isInteger = parseInt(newValue);
     if (!isInteger) return;
-    if (newValue > 5) {
-      newCount = 5;
-    } else if (newValue >= 1 && newValue <= 5) {
+    if (newValue > 3) {
+      newCount = 3;
+    } else if (newValue >= 1 && newValue <= 3) {
       newCount = newValue;
     }
 
@@ -115,7 +115,7 @@ export default function Minter() {
     const mintTotalCost = DIGBICK_MINT_COST * minter.mintCount;
 
     blockchain.smartContract.methods
-      .mint(blockchain.account, minter.mintCount)
+      .mint(minter.mintCount)
       .send({
         from: blockchain.account,
         value: blockchain.web3.utils.toWei(mintTotalCost?.toString(), "ether"),
@@ -183,7 +183,7 @@ export default function Minter() {
         weapons, and more. They are all fun and quirky, but you’d be more
         surprised by the rare ones! You can see more of our collection on{" "}
         <a
-          href={"https://opensea.io/collection/digbicks"}
+          href={"https://opensea.io/collection/digbicksadventure"}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -205,6 +205,8 @@ export default function Minter() {
         )}
       </div>
 
+      <small>Maximum 3 NFT mints per address</small>
+
       <div className="minterInputContainer">
         <div className="minterInputFieldContainer">
           <div className="minterInputText">
@@ -212,7 +214,7 @@ export default function Minter() {
           </div>
           <NumericInput
             min={1}
-            max={5}
+            max={3}
             value={minter.mintCount}
             mobile={isSmallScreen}
             className="minterCounter"
@@ -237,10 +239,7 @@ export default function Minter() {
         wallet.ethPrice * minter.mintCount
       ).toFixed(3)} ETH`}</p> */}
       <p className="pricePreview">
-        Final Price:{" "}
-        <strong>
-          <i>FREE Mint</i>
-        </strong>{" "}
+        Final Price: <strong>FREE MINT FKERS</strong>{" "}
       </p>
     </div>
   );
